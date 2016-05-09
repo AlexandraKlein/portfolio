@@ -45,11 +45,18 @@ body {
       text-align: center;
       z-index: 9999;
 
-      p {
+      a {
+        text-decoration: none;
+        display: block;
         color: $white;
         margin: 45px 0;
         font-size: 8vmin;
         font-family: $header-font;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $slate-gray;
+        }
       }
     }
   }
