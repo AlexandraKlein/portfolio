@@ -29,15 +29,6 @@ gulp.task('sass', function() {
         }))
 });
 
-gulp.task('prefix', function () {
-    return gulp.src('src/app.css')
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions'],
-            cascade: false
-        }))
-        .pipe(gulp.dest('dist'));
-});
-
 gulp.task('watch', ['browserSync', 'sass'], function (){
     gulp.watch('app/scss/**/*.scss', ['sass']);
     gulp.watch('app/scss/**/**/*.scss', ['sass']);

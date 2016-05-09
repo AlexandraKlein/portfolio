@@ -1,5 +1,6 @@
 $transitionAll: all .15s ease-out;
 $transitionHeight: height 300ms ease-in-out;
+$transitionBounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
 body {
   position: static;
@@ -17,12 +18,13 @@ body {
   .menu {
     background-color: $orange;
     -webkit-overflow-scrolling: touch;
-    overflow-y: scroll;
+    overflow: hidden;
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     transition: $transitionHeight;
+    transition-timing-function: $transitionBounce;
     z-index: 19999;
     height: 0;
     width: 100%;
@@ -32,6 +34,8 @@ body {
 
     &.open {
       height: 100%;
+      max-height: 100vh;
+      overflow: hidden;
     }
 
     nav {
@@ -43,16 +47,15 @@ body {
 
       p {
         color: $white;
-        padding: 25px 0;
+        margin: 45px 0;
+        font-size: 8vmin;
         font-family: $header-font;
-        @include font-size(28px);
       }
     }
   }
 
   .main {
     position: relative;
-    padding: 65px 0 40px;
     backface-visibility: hidden;
     overflow: hidden;
     transition: $transitionAll;
@@ -89,7 +92,7 @@ body {
 
             span {
               transition-duration: 0.4s;
-              transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+              transition-timing-function: $transitionBounce;
               display: block;
               position: absolute;
               height: 2px;
