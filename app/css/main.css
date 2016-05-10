@@ -258,10 +258,20 @@ p {
   .main #intro {
     text-align: left;
     width: 50vw; }
-    .main #intro h1,
-    .main #intro h2 {
-      font-weight: bold;
-      text-transform: uppercase;
-      margin-left: -8vw; }
+    .main #intro .textWrap {
+      margin-left: -8vw;
+      background: rgba(0, 0, 0, 0.8);
+      margin-top: 1vw; }
+      .main #intro .textWrap h1,
+      .main #intro .textWrap h2 {
+        color: #fff;
+        font-weight: bold;
+        text-transform: uppercase; }
+      .main #intro .textWrap:first-of-type {
+        width: 52vw;
+        padding: 1.2vw 0 0.1vw 1.2vw; }
+      .main #intro .textWrap:nth-of-type(2) {
+        width: 40vw;
+        padding: 0.7vw 0 0 1.3vw; }
     .main #intro p {
       line-height: 1.75; }
