@@ -1,5 +1,6 @@
 @import "typography";
 @import "variables";
+@import "snippets";
 
 body {
   background: $bg-color;
@@ -79,7 +80,7 @@ p {
   }
 
   #logoAnchor {
-    width: 70vmin;
+    width: 40vw;
 
     .logo {
       fill: $orange;
@@ -96,6 +97,22 @@ p {
     @keyframes fill {
       0% { fill: transparent; }
       100% { fill: $orange; }
+    }
+  }
+
+  #intro {
+    text-align: left;
+    width: 50vw;
+
+    h1,
+    h2 {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-left: -8vw;
+    }
+    
+    p {
+      line-height: 1.75;
     }
   }
 }
