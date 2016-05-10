@@ -274,4 +274,5 @@ p {
         width: 40vw;
         padding: 0.7vw 0 0 1.3vw; }
     .main #intro p {
-      line-height: 1.75; }
+      line-height: 2vw;
+      font-size: 1.4vw; }
