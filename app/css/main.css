@@ -260,11 +260,11 @@ p {
     width: 50vw; }
     .main #intro .textWrap {
       margin-left: -8vw;
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(255, 255, 255, 0.8);
       margin-top: 1vw; }
       .main #intro .textWrap h1,
       .main #intro .textWrap h2 {
-        color: #fff;
+        color: #171d22;
         font-weight: bold;
         text-transform: uppercase; }
       .main #intro .textWrap:first-of-type {
