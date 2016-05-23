@@ -103,6 +103,10 @@ body.home {
 
   }
 
+  .divider.map {
+    border-bottom-width: 0;
+  }
+
   div#map_canvas {
     width: auto;
     height: 250px;

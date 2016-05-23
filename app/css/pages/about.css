@@ -20,7 +20,7 @@
 
 .divider {
   display: block;
-  margin: 40px auto 0;
+  margin: 20px auto 0;
   width: calc(100% - 20px);
   height: 50px;
   background: #EF4E31;

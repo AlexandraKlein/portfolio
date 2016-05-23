@@ -178,6 +178,7 @@ body {
 
 /* Text styling */
 .cbp-so-section h3 {
+  color: #171d22;
   font-size: 5vw;
   margin: 0 30px; }
 
@@ -279,7 +280,7 @@ body {
 
 .divider {
   display: block;
-  margin: 40px auto 0;
+  margin: 20px auto 0;
   width: calc(100% - 20px);
   height: 50px;
   background: #EF4E31;
@@ -354,7 +355,7 @@ p {
 
 .divider {
   display: block;
-  margin: 40px auto 0;
+  margin: 20px auto 0;
   width: calc(100% - 20px);
   height: 50px;
   background: #EF4E31;
@@ -450,6 +451,9 @@ body.home .content .text-container {
     line-height: 2vw;
     font-size: 1.4vw; }
 
+body.home .divider.map {
+  border-bottom-width: 0; }
+
 body.home div#map_canvas {
   width: auto;
   height: 250px; }
@@ -481,7 +485,7 @@ body.home div#map_canvas {
 
 .divider {
   display: block;
-  margin: 40px auto 0;
+  margin: 20px auto 0;
   width: calc(100% - 20px);
   height: 50px;
   background: #EF4E31;
