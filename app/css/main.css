@@ -162,8 +162,7 @@ body {
       padding: 0 20px; }
 
 .cbp-so-scroller {
-  margin-top: 3em;
-  overflow: hidden; }
+  margin-top: 3em; }
 
 .cbp-so-section {
   margin-bottom: 10em; }
@@ -190,8 +189,6 @@ body {
   width: 50%;
   float: left;
   margin: 0;
-  overflow: hidden;
-  min-height: 12em;
   transition: opacity 0.5s, -webkit-transform 0.5s;
   transition: transform 0.5s, opacity 0.5s;
   transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s; }
@@ -298,7 +295,8 @@ h1,
 h2 {
   color: #171d22;
   font-family: "Syncopate", sans-serif;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: bold; }
 
 h3,
 h4 {
