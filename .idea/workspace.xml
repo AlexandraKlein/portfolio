@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d75c47e-72e8-4c62-b6a7-708346790671" name="Default" comment="More intro stuff - desktop">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/components/_homeScroll.scss" afterPath="$PROJECT_DIR$/app/scss/components/_homeScroll.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/partials/_snippets.scss" afterPath="$PROJECT_DIR$/app/scss/partials/_snippets.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/pages/about.css" afterPath="$PROJECT_DIR$/app/css/pages/about.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/pages/home.css" afterPath="$PROJECT_DIR$/app/css/pages/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/pages/home.scss" afterPath="$PROJECT_DIR$/app/scss/pages/home.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/index.html" afterPath="$PROJECT_DIR$/app/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/main.css" afterPath="$PROJECT_DIR$/app/css/main.css" />
+    <list default="true" id="3d75c47e-72e8-4c62-b6a7-708346790671" name="Default" comment="Map marker">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/map-marker.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/logos/cmab-logo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/logos/fosterfarms-logo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/logos/sevenup-logo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/logos/tacobell-logo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/logos/target-logo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/logos/vanityfair-logo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/logos/vw-logo.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/images/logos/zillow-logo.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="portfolio.iws" />
@@ -48,8 +50,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.88169366">
-              <caret line="302" column="17" selection-start-line="302" selection-start-column="17" selection-end-line="302" selection-end-column="17" />
+            <state vertical-scroll-proportion="0.81070983">
+              <caret line="299" column="26" selection-start-line="299" selection-start-column="26" selection-end-line="299" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -533,7 +535,13 @@
       <option name="project" value="LOCAL" />
       <updated>1464019305783</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Map marker">
+      <created>1464021267218</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1464021267218</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -579,7 +587,8 @@
     <MESSAGE value="Test content - homepage." />
     <MESSAGE value="JS refactor." />
     <MESSAGE value="images" />
-    <option name="LAST_COMMIT_MESSAGE" value="images" />
+    <MESSAGE value="Map marker" />
+    <option name="LAST_COMMIT_MESSAGE" value="Map marker" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -839,8 +848,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88169366">
-          <caret line="302" column="17" selection-start-line="302" selection-start-column="17" selection-end-line="302" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.81070983">
+          <caret line="299" column="26" selection-start-line="299" selection-start-column="26" selection-end-line="299" selection-end-column="26" />
           <folding />
         </state>
       </provider>
