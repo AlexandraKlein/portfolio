@@ -4,6 +4,12 @@
 @import url(https://fonts.googleapis.com/css?family=Syncopate);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800italic);
+@import url(https://fonts.googleapis.com/css?family=Syncopate);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800italic);
+@import url(https://fonts.googleapis.com/css?family=Syncopate);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800italic);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -155,7 +161,109 @@ body {
       font-size: 22px;
       padding: 0 20px; }
 
-.flex-both-align, .main {
+.cbp-so-scroller {
+  margin-top: 3em;
+  overflow: hidden; }
+
+.cbp-so-section {
+  margin-bottom: 10em; }
+
+/* Clear floats of children */
+.cbp-so-section:before,
+.cbp-so-section:after {
+  content: " ";
+  display: table; }
+
+.cbp-so-section:after {
+  clear: both; }
+
+/* Text styling */
+.cbp-so-section h3 {
+  font-size: 5vw;
+  margin: 0 30px; }
+
+.cbp-so-section p {
+  font-size: 2vw; }
+
+/* Sides */
+.cbp-so-side {
+  width: 50%;
+  float: left;
+  margin: 0;
+  overflow: hidden;
+  min-height: 12em;
+  transition: opacity 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s; }
+
+/* Clear floats of children */
+.cbp-so-side:before,
+.cbp-so-side:after {
+  content: " ";
+  display: table; }
+
+.cbp-so-side:after {
+  clear: both; }
+
+.cbp-so-side-right {
+  text-align: left; }
+
+.cbp-so-side-left {
+  text-align: right; }
+
+.cbp-so-side-right img {
+  float: left; }
+
+.cbp-so-side-left img {
+  float: right; }
+
+.cbp-so-side img {
+  width: 30vw; }
+
+/* Initial state (hidden or anything else) */
+.cbp-so-init .cbp-so-side {
+  opacity: 0; }
+
+.cbp-so-init .cbp-so-side-left {
+  -webkit-transform: translateX(-80px);
+  transform: translateX(-80px); }
+
+.cbp-so-init .cbp-so-side-right {
+  -webkit-transform: translateX(80px);
+  transform: translateX(80px); }
+
+/* Animated state */
+/* add you final states (transition) or your effects (animations) for each side */
+.cbp-so-section.cbp-so-animate .cbp-so-side-left,
+.cbp-so-section.cbp-so-animate .cbp-so-side-right {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1; }
+
+/* For example, add a delay for the right side:
+.cbp-so-section.cbp-so-animate .cbp-so-side-right {
+	-webkit-transition-delay: 0.2s;
+	-moz-transition-delay: 0.2s;
+	transition-delay: 0.2s;
+}
+*/
+/* Example media queries */
+@media screen and (max-width: 73.5em) {
+  .cbp-so-scroller {
+    font-size: 65%; }
+  .cbp-so-section h2 {
+    margin: 0; }
+  .cbp-so-side img {
+    max-width: 120%; } }
+
+@media screen and (max-width: 41.125em) {
+  .cbp-so-side {
+    float: none;
+    width: 100%; }
+  .cbp-so-side img {
+    max-width: 100%; } }
+
+.flex-both-align, .cbp-so-section, body.home .main {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -166,6 +274,22 @@ body {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.divider {
+  display: block;
+  margin: 40px auto 0;
+  width: calc(100% - 20px);
+  height: 50px;
+  background: #EF4E31;
+  border-bottom: 2px solid #F5F5F5;
+  border-top: 2px solid #F5F5F5;
+  box-shadow: 0 0 0 10px #EF4E31; }
+
 body {
   background: #F5F5F5;
   border: 1.5rem solid #fff; }
@@ -173,7 +297,8 @@ body {
 h1,
 h2 {
   color: #171d22;
-  font-family: "Syncopate", sans-serif; }
+  font-family: "Syncopate", sans-serif;
+  text-transform: uppercase; }
 
 h3,
 h4 {
@@ -189,7 +314,7 @@ h2 {
   font-size: 1.875rem; }
   @media (min-width: 768px) {
     h2 {
-      font-size: 6vw; } }
+      font-size: 4vw; } }
 
 h3 {
   font-size: 2.125rem; }
@@ -212,11 +337,38 @@ p {
     p {
       font-size: 1.25rem; } }
 
-.main {
+.flex-both-align, .cbp-so-section, body.home .main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.divider {
+  display: block;
+  margin: 40px auto 0;
+  width: calc(100% - 20px);
+  height: 50px;
+  background: #EF4E31;
+  border-bottom: 2px solid #F5F5F5;
+  border-top: 2px solid #F5F5F5;
+  box-shadow: 0 0 0 10px #EF4E31; }
+
+body.home .main {
   height: calc(100vh - 3rem);
   text-align: center;
   border-bottom: 1.5rem solid #fff; }
-  .main .bg-video {
+  body.home .main .bg-video {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -227,9 +379,9 @@ p {
     -webkit-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
     z-index: -1; }
-  .main #logoAnchor {
+  body.home .main #logoAnchor {
     width: 40vw; }
-    .main #logoAnchor .logo {
+    body.home .main #logoAnchor .logo {
       fill: #EF4E31;
       -webkit-animation-name: fillUp;
               animation-name: fillUp;
@@ -255,24 +407,86 @@ p {
     fill: transparent; }
   100% {
     fill: #EF4E31; } }
-  .main #intro {
+  body.home .main #intro {
     text-align: left;
     width: 50vw; }
-    .main #intro .textWrap {
+    body.home .main #intro .textWrap {
       margin-left: -8vw;
       background: rgba(255, 255, 255, 0.8);
       margin-top: 1vw; }
-      .main #intro .textWrap h1,
-      .main #intro .textWrap h2 {
+      body.home .main #intro .textWrap h1,
+      body.home .main #intro .textWrap h2 {
         color: #171d22;
         font-weight: bold;
         text-transform: uppercase; }
-      .main #intro .textWrap:first-of-type {
+      body.home .main #intro .textWrap:first-of-type {
         width: 52vw;
         padding: 1.2vw 0 0.1vw 1.2vw; }
-      .main #intro .textWrap:nth-of-type(2) {
-        width: 40vw;
-        padding: 0.7vw 0 0 1.3vw; }
-    .main #intro p {
+      body.home .main #intro .textWrap:nth-of-type(2) {
+        width: 52vw;
+        padding: 0.8vw 0 0.1vw 1.2vw; }
+    body.home .main #intro p {
       line-height: 2vw;
       font-size: 1.4vw; }
+
+body.home .content .img-container {
+  margin-bottom: 3vw;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  body.home .content .img-container svg {
+    padding: 7vw 7vw 0;
+    margin-top: -15vw; }
+
+body.home .content .text-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  body.home .content .text-container p {
+    line-height: 2vw;
+    font-size: 1.4vw; }
+
+body.home div#map_canvas {
+  width: auto;
+  height: 250px; }
+  @media (min-width: 768px) {
+    body.home div#map_canvas {
+      height: 20vw; } }
+  body.home div#map_canvas .gm-style div:nth-child(2),
+  body.home div#map_canvas .gm-style div:nth-child(6) {
+    z-index: -1 !important; }
+  body.home div#map_canvas .gm-style .gmnoprint {
+    z-index: -1 !important; }
+
+.flex-both-align, .cbp-so-section, body.home .main {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.divider {
+  display: block;
+  margin: 40px auto 0;
+  width: calc(100% - 20px);
+  height: 50px;
+  background: #EF4E31;
+  border-bottom: 2px solid #F5F5F5;
+  border-top: 2px solid #F5F5F5;
+  box-shadow: 0 0 0 10px #EF4E31; }

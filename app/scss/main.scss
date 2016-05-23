@@ -6,5 +6,9 @@
 
 // Components
 @import "components/navigation";
-
+@import "components/homeScroll";
 @import "partials/base";
+
+// Pages
+@import "pages/home";
+@import "pages/about";

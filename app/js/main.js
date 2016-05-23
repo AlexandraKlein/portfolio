@@ -16,4 +16,16 @@ $( document ).ready(function() {
     path.getBoundingClientRect();
     path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 7s ease-in-out';
     path.style.strokeDashoffset = '0';
+
+
+    var hi = new Vivus('machine', {type: 'scenario-sync', duration: 7}, function () {
+        if (console) {
+            console.log('Animation finished. [log triggered from callback]');
+        }
+    });
+    var hello = new Vivus('responsive', {type: 'scenario-sync', duration: 7}, function () {
+        if (console) {
+            console.log('Animation finished. [log triggered from callback]');
+        }
+    });
 });
