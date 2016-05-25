@@ -27,3 +27,32 @@
   border-bottom: 2px solid #F5F5F5;
   border-top: 2px solid #F5F5F5;
   box-shadow: 0 0 0 10px #EF4E31; }
+
+body.about #logoAnchor svg {
+  width: 20vw; }
+  body.about #logoAnchor svg .logo {
+    fill: #EF4E31;
+    -webkit-animation-name: fillUp;
+            animation-name: fillUp;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
+
+@-webkit-keyframes fillUp {
+  0% {
+    fill: transparent; }
+  100% {
+    fill: #EF4E31; } }
+
+@-webkit-keyframes fill {
+  0% {
+    fill: transparent; }
+  100% {
+    fill: #EF4E31; } }
+
+@keyframes fill {
+  0% {
+    fill: transparent; }
+  100% {
+    fill: #EF4E31; } }

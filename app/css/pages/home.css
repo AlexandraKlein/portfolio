@@ -76,7 +76,6 @@ body.home .main {
     width: 50vw; }
     body.home .main #intro .textWrap {
       margin-left: -8vw;
-      background: rgba(255, 255, 255, 0.8);
       margin-top: 1vw; }
       body.home .main #intro .textWrap h1,
       body.home .main #intro .textWrap h2 {
