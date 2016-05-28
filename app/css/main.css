@@ -275,7 +275,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.flex-row, body.projects .projects-wrap {
+.flex-row, body.projects .projects-wrap, body.projects .client-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -288,6 +288,9 @@ body {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start; }
@@ -406,7 +409,7 @@ body:not(.home) #logoAnchor svg {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.flex-row, body.projects .projects-wrap {
+.flex-row, body.projects .projects-wrap, body.projects .client-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -419,6 +422,9 @@ body:not(.home) #logoAnchor svg {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start; }
@@ -553,7 +559,7 @@ body.home div#map_canvas {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.flex-row, body.projects .projects-wrap {
+.flex-row, body.projects .projects-wrap, body.projects .client-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -566,6 +572,9 @@ body.home div#map_canvas {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start; }
@@ -604,7 +613,7 @@ body.home div#map_canvas {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.flex-row, body.projects .projects-wrap {
+.flex-row, body.projects .projects-wrap, body.projects .client-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -617,6 +626,9 @@ body.home div#map_canvas {
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start; }
@@ -647,6 +659,7 @@ body.home div#map_canvas {
 body.projects {
   min-height: 100vh; }
   body.projects #intro {
+    width: 80vw;
     margin: 10vw auto 0; }
     body.projects #intro .textWrap {
       background-color: #171d22;
@@ -734,3 +747,36 @@ body.projects {
         transition: all .25s; }
         body.projects .projects-wrap a .hover:hover {
           background-color: transparent; }
+  body.projects .textWrap {
+    background-color: #171d22;
+    width: 86vw;
+    margin: 10vw auto 5vw; }
+    @media (max-width: 767px) {
+      body.projects .textWrap {
+        width: 12.7em; } }
+    body.projects .textWrap h1 {
+      color: #F5F5F5;
+      padding-top: 1vw;
+      text-align: center; }
+      @media (max-width: 767px) {
+        body.projects .textWrap h1 {
+          font-size: 2em; } }
+  body.projects .client-wrap {
+    margin: auto;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    body.projects .client-wrap .client {
+      background-size: cover !important;
+      width: calc(75vw - 3em);
+      height: 50vw; }
+      @media (min-width: 768px) {
+        body.projects .client-wrap .client {
+          width: calc(30vw - 3em);
+          height: calc(30vw - 3em); } }
+      body.projects .client-wrap .client.zillow-logo {
+        background: url("../../images/logos/zillow-logo.svg") center center no-repeat; }
+      body.projects .client-wrap .client.sevenup-logo {
+        background: url("../../images/logos/sevenup-logo.svg") center center no-repeat; }
+      body.projects .client-wrap .client.tacobell-logo {
+        background: url("../../images/logos/tacobell-logo.svg") center center no-repeat; }

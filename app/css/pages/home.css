@@ -25,6 +25,9 @@
   -webkit-justify-content: flex-start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start; }

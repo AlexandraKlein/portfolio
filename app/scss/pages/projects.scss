@@ -8,6 +8,7 @@ body.projects {
   min-height: 100vh;
 
   #intro {
+    width: 80vw;
     margin: 10vw auto 0;
     .head-wrap {
       @extend .flex-both-align;
@@ -102,6 +103,51 @@ body.projects {
 
         &:hover {
           background-color: transparent;
+        }
+      }
+    }
+  }
+
+  .textWrap {
+    background-color: $off-black;
+    width: 86vw;
+    margin: 10vw auto 5vw;
+
+    @include mobile {
+      width: 12.7em;
+    }
+
+    h1 {
+      color: $bg-color;
+      padding-top: 1vw;
+      text-align: center;
+
+      @include mobile {
+        font-size: 2em;
+      }
+    }
+  }
+
+  .client-wrap {
+    margin: auto;
+    @extend .flex-row;
+    justify-content: center;
+
+    .client {
+      background-size: cover !important;
+      width: calc(75vw - 3em);
+      height: 50vw;
+
+      @include tablet {
+        width: calc(30vw - 3em);
+        height: calc(30vw - 3em);
+      }
+
+      $project-tiles-names: zillow-logo sevenup-logo tacobell-logo;
+      @each $project-tile-name in $project-tiles-names {
+
+        &.#{$project-tile-name} {
+          background: url("#{$root-asset-path}logos/#{$project-tile-name}.svg") center center no-repeat;
         }
       }
     }
