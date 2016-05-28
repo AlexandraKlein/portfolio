@@ -67,7 +67,7 @@ body.projects {
       .logo {
         width: 50vw;
         height: 50vw;
-        transition: all .5s;
+        transition: all .75s;
         pointer-events: none;
         @extend .align-both;
 
@@ -80,8 +80,9 @@ body.projects {
         }
 
         @include tablet {
-          width: 20vw;
-          height: 20vw;
+          width: 40vw;
+          height: 40vw;
+          opacity: 0.75;
         }
       }
 

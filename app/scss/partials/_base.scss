@@ -63,6 +63,13 @@ p {
   }
 }
 
+input:focus,
+a:focus,
+button:focus {
+  outline: none;
+  border: none;
+}
+
 .textWrap {
   background-color: $white-80;
 }

@@ -366,6 +366,12 @@ p {
     p {
       font-size: 1.25rem; } }
 
+input:focus,
+a:focus,
+button:focus {
+  outline: none;
+  border: none; }
+
 .textWrap {
   background-color: rgba(255, 255, 255, 0.8); }
 
@@ -711,7 +717,7 @@ body.projects {
       body.projects .projects-wrap a .logo {
         width: 50vw;
         height: 50vw;
-        transition: all .5s;
+        transition: all .75s;
         pointer-events: none; }
         body.projects .projects-wrap a .logo.cmab-logo {
           background: url("../../images/logos/cmab-logo.svg") center center no-repeat; }
@@ -733,8 +739,9 @@ body.projects {
           background: url("../../images/logos/zillow-logo.svg") center center no-repeat; }
         @media (min-width: 768px) {
           body.projects .projects-wrap a .logo {
-            width: 20vw;
-            height: 20vw; } }
+            width: 40vw;
+            height: 40vw;
+            opacity: 0.75; } }
       body.projects .projects-wrap a:hover .logo {
         opacity: 0; }
       body.projects .projects-wrap a .hover {
