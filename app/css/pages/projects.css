@@ -35,7 +35,7 @@
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
 
-.align-both {
+.align-both, body.projects .projects-wrap a .logo {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -54,25 +54,37 @@
 
 body.projects {
   min-height: 100vh; }
-  body.projects #intro .textWrap {
-    width: 57vw;
-    margin-left: 2vw; }
+  body.projects #intro {
+    margin: 10vw auto 0; }
+    body.projects #intro .textWrap {
+      background-color: #171d22;
+      width: 57vw;
+      margin-left: 2vw; }
+      @media (max-width: 767px) {
+        body.projects #intro .textWrap {
+          width: 12.7em; } }
+      body.projects #intro .textWrap h1 {
+        color: #F5F5F5;
+        padding-top: 1vw; }
+        @media (max-width: 767px) {
+          body.projects #intro .textWrap h1 {
+            font-size: 2em; } }
   body.projects .projects-wrap {
-    margin: 5vw auto;
+    margin: 10vw auto 0;
     width: 100vw; }
     body.projects .projects-wrap a {
-      width: calc(100vw - 4.5rem);
-      height: calc(100vw - 4.5rem);
+      width: calc(100vw - 1.5rem);
+      height: calc(100vw - 1.5rem);
       display: block;
       position: relative; }
       @media (min-width: 768px) {
         body.projects .projects-wrap a {
-          width: calc(50vw - 2.25rem);
-          height: calc(50vw - 2.25rem); } }
+          width: calc(50vw - 1.5rem);
+          height: calc(50vw - 1.5rem); } }
       body.projects .projects-wrap a .project {
         background-size: cover !important;
-        width: calc(100% + 1.5rem);
-        height: calc(100% + 1.5rem); }
+        width: 100%;
+        height: 100%; }
         body.projects .projects-wrap a .project.web-deutsch {
           background: url("../../images/projects/web-deutsch.jpg") center center no-repeat; }
         body.projects .projects-wrap a .project.web-vw {
@@ -91,17 +103,42 @@ body.projects {
           background: url("../../images/projects/web-vw-sharks-awards.jpg") center center no-repeat; }
         body.projects .projects-wrap a .project.web-vf-tbtt {
           background: url("../../images/projects/web-vf-tbtt.jpg") center center no-repeat; }
+      body.projects .projects-wrap a .logo {
+        width: 50vw;
+        height: 50vw;
+        transition: all .5s;
+        pointer-events: none; }
+        body.projects .projects-wrap a .logo.cmab-logo {
+          background: url("../../images/logos/cmab-logo.svg") center center no-repeat; }
+        body.projects .projects-wrap a .logo.vw-logo {
+          background: url("../../images/logos/vw-logo.svg") center center no-repeat; }
+        body.projects .projects-wrap a .logo.fosterfarms-logo {
+          background: url("../../images/logos/fosterfarms-logo.svg") center center no-repeat; }
+        body.projects .projects-wrap a .logo.sevenup-logo {
+          background: url("../../images/logos/sevenup-logo.svg") center center no-repeat; }
+        body.projects .projects-wrap a .logo.tacobell-logo {
+          background: url("../../images/logos/tacobell-logo.svg") center center no-repeat; }
+        body.projects .projects-wrap a .logo.target-logo {
+          background: url("../../images/logos/target-logo.svg") center center no-repeat; }
+        body.projects .projects-wrap a .logo.deutsch-logo {
+          background: url("../../images/logos/deutsch-logo.svg") center center no-repeat; }
+        body.projects .projects-wrap a .logo.vanityfair-logo {
+          background: url("../../images/logos/vanityfair-logo.svg") center center no-repeat; }
+        body.projects .projects-wrap a .logo.zillow-logo {
+          background: url("../../images/logos/zillow-logo.svg") center center no-repeat; }
+        @media (min-width: 768px) {
+          body.projects .projects-wrap a .logo {
+            width: 20vw;
+            height: 20vw; } }
+      body.projects .projects-wrap a:hover .logo {
+        opacity: 0; }
       body.projects .projects-wrap a .hover {
-        width: calc(100% - 1.5rem);
+        width: 100%;
         height: 100%;
         position: absolute;
         top: 0;
         left: 0;
         background-color: rgba(255, 255, 255, 0.8);
-        border: 1.5rem solid #EF4E31; }
+        transition: all .25s; }
         body.projects .projects-wrap a .hover:hover {
           background-color: transparent; }
-      body.projects .projects-wrap a:nth-of-type(even) .hover {
-        border-left-width: 1.5rem; }
-      body.projects .projects-wrap a:nth-of-type(odd) .hover {
-        border-right-width: 1.5rem; }

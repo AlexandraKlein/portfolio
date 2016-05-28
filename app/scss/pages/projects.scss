@@ -8,38 +8,51 @@ body.projects {
   min-height: 100vh;
 
   #intro {
-
+    margin: 10vw auto 0;
     .head-wrap {
       @extend .flex-both-align;
     }
 
-
     .textWrap {
+      background-color: $off-black;
       width: 57vw;
       margin-left: 2vw;
+
+      @include mobile {
+        width: 12.7em;
+      }
+
+      h1 {
+        color: $bg-color;
+        padding-top: 1vw;
+
+        @include mobile {
+          font-size: 2em;
+        }
+      }
     }
   }
 
   .projects-wrap {
-    margin: 5vw auto;
+    margin: 10vw auto 0;
     width: 100vw;
     @extend .flex-row;
 
     a {
-      width: calc(100vw - 4.5rem);
-      height: calc(100vw - 4.5rem);
+      width: calc(100vw - 1.5rem);
+      height: calc(100vw - 1.5rem);
       display: block;
       position: relative;
 
       @include tablet {
-        width: calc(50vw - 2.25rem);
-        height: calc(50vw - 2.25rem);
+        width: calc(50vw - 1.5rem);
+        height: calc(50vw - 1.5rem);
       }
 
       .project {
         background-size: cover !important;
-        width: calc(100% + 1.5rem);
-        height: calc(100% + 1.5rem);
+        width: 100%;
+        height: 100%;
 
         $project-tiles-names: web-deutsch web-vw web-vw-carnet web-cmab web-target-btc web-target-btc-awards web-fosterfarms web-vw-sharks-awards web-vf-tbtt;
         @each $project-tile-name in $project-tiles-names {
@@ -50,32 +63,47 @@ body.projects {
         }
       }
 
+      .logo {
+        width: 50vw;
+        height: 50vw;
+        transition: all .5s;
+        pointer-events: none;
+        @extend .align-both;
+
+        $project-tiles-names: cmab-logo vw-logo fosterfarms-logo sevenup-logo tacobell-logo target-logo deutsch-logo vanityfair-logo zillow-logo;
+        @each $project-tile-name in $project-tiles-names {
+
+          &.#{$project-tile-name} {
+            background: url("#{$root-asset-path}logos/#{$project-tile-name}.svg") center center no-repeat;
+          }
+        }
+
+        @include tablet {
+          width: 20vw;
+          height: 20vw;
+        }
+      }
+
+      &:hover {
+
+        .logo {
+          opacity: 0;
+        }
+      }
+
       .hover {
-        width: calc(100% - 1.5rem);
+        width: 100%;
         height: 100%;
         position: absolute;
         top: 0;
         left: 0;
         background-color: $white-80;
-        border: 1.5rem solid $orange;
+        transition: all .25s;
 
         &:hover {
           background-color: transparent;
         }
       }
-
-      &:nth-of-type(even) {
-        .hover {
-          border-left-width: 1.5rem;
-        }
-      }
-
-      &:nth-of-type(odd) {
-        .hover {
-          border-right-width: 1.5rem;
-        }
-      }
-
     }
   }
 
