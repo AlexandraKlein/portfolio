@@ -5,29 +5,5 @@
 
 body.about {
 
-  #logoAnchor {
-
-    svg {
-      width: 20vw;
-
-      .logo {
-        fill: $orange;
-        animation-name: fillUp;
-        animation-duration: 5s;
-        animation-timing-function: ease-in-out;
-      }
-
-      @-webkit-keyframes fillUp {
-        0% { fill: transparent; }
-        100% { fill: $orange; }
-      }
-
-      @keyframes fill {
-        0% { fill: transparent; }
-        100% { fill: $orange; }
-      }
-    }
-
-  }
 
 }

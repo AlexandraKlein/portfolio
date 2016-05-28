@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css?family=Syncopate);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800italic);
+.flex-both-align, body.projects #intro .head-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.flex-row, body.projects .projects-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.align-both {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.divider {
+  display: block;
+  margin: 20px auto 0;
+  width: calc(100% - 20px);
+  height: 50px;
+  background: #EF4E31;
+  border-bottom: 2px solid #F5F5F5;
+  border-top: 2px solid #F5F5F5;
+  box-shadow: 0 0 0 10px #EF4E31; }
+
+body.projects {
+  min-height: 100vh; }
+  body.projects #intro .textWrap {
+    width: 57vw;
+    margin-left: 2vw; }
+  body.projects .projects-wrap {
+    margin: 5vw auto;
+    width: 100vw; }
+    body.projects .projects-wrap a {
+      width: calc(100vw - 4.5rem);
+      height: calc(100vw - 4.5rem);
+      display: block;
+      position: relative; }
+      @media (min-width: 768px) {
+        body.projects .projects-wrap a {
+          width: calc(50vw - 2.25rem);
+          height: calc(50vw - 2.25rem); } }
+      body.projects .projects-wrap a .project {
+        background-size: cover !important;
+        width: calc(100% + 1.5rem);
+        height: calc(100% + 1.5rem); }
+        body.projects .projects-wrap a .project.web-deutsch {
+          background: url("../../images/projects/web-deutsch.jpg") center center no-repeat; }
+        body.projects .projects-wrap a .project.web-vw {
+          background: url("../../images/projects/web-vw.jpg") center center no-repeat; }
+        body.projects .projects-wrap a .project.web-vw-carnet {
+          background: url("../../images/projects/web-vw-carnet.jpg") center center no-repeat; }
+        body.projects .projects-wrap a .project.web-cmab {
+          background: url("../../images/projects/web-cmab.jpg") center center no-repeat; }
+        body.projects .projects-wrap a .project.web-target-btc {
+          background: url("../../images/projects/web-target-btc.jpg") center center no-repeat; }
+        body.projects .projects-wrap a .project.web-target-btc-awards {
+          background: url("../../images/projects/web-target-btc-awards.jpg") center center no-repeat; }
+        body.projects .projects-wrap a .project.web-fosterfarms {
+          background: url("../../images/projects/web-fosterfarms.jpg") center center no-repeat; }
+        body.projects .projects-wrap a .project.web-vw-sharks-awards {
+          background: url("../../images/projects/web-vw-sharks-awards.jpg") center center no-repeat; }
+        body.projects .projects-wrap a .project.web-vf-tbtt {
+          background: url("../../images/projects/web-vf-tbtt.jpg") center center no-repeat; }
+      body.projects .projects-wrap a .hover {
+        width: calc(100% - 1.5rem);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1.5rem solid #EF4E31; }
+        body.projects .projects-wrap a .hover:hover {
+          background-color: transparent; }
+      body.projects .projects-wrap a:nth-of-type(even) .hover {
+        border-left-width: 1.5rem; }
+      body.projects .projects-wrap a:nth-of-type(odd) .hover {
+        border-right-width: 1.5rem; }

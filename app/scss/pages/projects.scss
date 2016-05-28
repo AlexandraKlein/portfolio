@@ -1,0 +1,82 @@
+@import "../partials/typography";
+@import "../partials/variables";
+@import "../partials/snippets";
+@import "../partials/mixins";
+
+body.projects {
+
+  min-height: 100vh;
+
+  #intro {
+
+    .head-wrap {
+      @extend .flex-both-align;
+    }
+
+
+    .textWrap {
+      width: 57vw;
+      margin-left: 2vw;
+    }
+  }
+
+  .projects-wrap {
+    margin: 5vw auto;
+    width: 100vw;
+    @extend .flex-row;
+
+    a {
+      width: calc(100vw - 4.5rem);
+      height: calc(100vw - 4.5rem);
+      display: block;
+      position: relative;
+
+      @include tablet {
+        width: calc(50vw - 2.25rem);
+        height: calc(50vw - 2.25rem);
+      }
+
+      .project {
+        background-size: cover !important;
+        width: calc(100% + 1.5rem);
+        height: calc(100% + 1.5rem);
+
+        $project-tiles-names: web-deutsch web-vw web-vw-carnet web-cmab web-target-btc web-target-btc-awards web-fosterfarms web-vw-sharks-awards web-vf-tbtt;
+        @each $project-tile-name in $project-tiles-names {
+
+          &.#{$project-tile-name} {
+            background: url("#{$root-asset-path}projects/#{$project-tile-name}.jpg") center center no-repeat;
+          }
+        }
+      }
+
+      .hover {
+        width: calc(100% - 1.5rem);
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: $white-80;
+        border: 1.5rem solid $orange;
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+
+      &:nth-of-type(even) {
+        .hover {
+          border-left-width: 1.5rem;
+        }
+      }
+
+      &:nth-of-type(odd) {
+        .hover {
+          border-right-width: 1.5rem;
+        }
+      }
+
+    }
+  }
+
+}
