@@ -52,7 +52,8 @@ h4 {
   }
 }
 
-p {
+p,
+li {
   color: $slate-gray;
   font-family: $body-font;
   margin: 30px 30px 10px;
@@ -61,6 +62,13 @@ p {
   @include tablet {
     @include font-size(20px);
   }
+}
+
+
+a {
+  font-family: $body-font;
+  text-decoration: none;
+  color: $orange
 }
 
 input:focus,

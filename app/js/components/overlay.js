@@ -6,7 +6,6 @@ $( document ).ready(function() {
         project = $('a.project-target');
 
     project.click(function(e){
-
         $(e.currentTarget).siblings('.project-overlay').addClass('open'); // adds 'height: 100%'
         body.addClass('open'); // adds 'position: fixed'
         close.addClass('open');

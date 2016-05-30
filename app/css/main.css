@@ -358,14 +358,21 @@ h4 {
     h4 {
       font-size: 4vw; } }
 
-p {
+p,
+li {
   color: #515052;
   font-family: "Open Sans", sans-serif;
   margin: 30px 30px 10px;
   font-size: 1rem; }
   @media (min-width: 768px) {
-    p {
+    p,
+    li {
       font-size: 1.25rem; } }
+
+a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #EF4E31; }
 
 input:focus,
 a:focus,
@@ -668,13 +675,20 @@ body.projects {
   body.projects #intro {
     width: 80vw;
     margin: 10vw auto 0; }
+    @media (max-width: 767px) {
+      body.projects #intro .head-wrap {
+        display: block; }
+        body.projects #intro .head-wrap svg {
+          display: block;
+          margin: auto; } }
     body.projects #intro .textWrap {
       background-color: #171d22;
       width: 57vw;
       margin-left: 2vw; }
       @media (max-width: 767px) {
         body.projects #intro .textWrap {
-          width: 12.7em; } }
+          width: 12.7em;
+          margin: 20px auto; } }
       body.projects #intro .textWrap h1 {
         color: #F5F5F5;
         padding-top: 1vw; }
@@ -683,7 +697,8 @@ body.projects {
             font-size: 2em; } }
   body.projects .projects-wrap {
     margin: 10vw auto 0;
-    width: 100vw; }
+    width: 100vw;
+    overflow-y: auto; }
     body.projects .projects-wrap a {
       width: calc(100vw - 1.5rem);
       height: calc(100vw - 1.5rem);
@@ -758,14 +773,16 @@ body.projects {
     body.projects .projects-wrap .project-overlay {
       height: 0;
       width: 100%;
-      position: absolute;
+      position: fixed;
       top: 0;
       left: 0;
-      background: #fff;
+      background: #F5F5F5;
       z-index: 999999;
+      padding: 80px 0;
       display: none; }
       body.projects .projects-wrap .project-overlay.open {
         height: 100%;
+        overflow-y: auto;
         display: block; }
         body.projects .projects-wrap .project-overlay.open .close {
           cursor: pointer;
@@ -791,6 +808,115 @@ body.projects {
               -webkit-transform: rotate(-310deg);
                       transform: rotate(-310deg);
               top: 12px; }
+      body.projects .projects-wrap .project-overlay .textWrap {
+        background-color: #EF4E31;
+        margin: auto; }
+        body.projects .projects-wrap .project-overlay .textWrap h2 {
+          color: #fff;
+          text-align: center;
+          padding-top: 4px; }
+          @media (min-width: 768px) {
+            body.projects .projects-wrap .project-overlay .textWrap h2 {
+              padding-top: 0.5vw; } }
+      body.projects .projects-wrap .project-overlay section {
+        height: 100%; }
+      body.projects .projects-wrap .project-overlay ul {
+        width: 65vw;
+        margin: 10vw auto;
+        height: calc(100% + 150px);
+        overflow: visible; }
+        @media (min-width: 768px) {
+          body.projects .projects-wrap .project-overlay ul {
+            width: 50vw; } }
+        body.projects .projects-wrap .project-overlay ul li {
+          margin-left: 20vw; }
+          body.projects .projects-wrap .project-overlay ul li:before {
+            position: absolute;
+            margin: 0.4375rem 0 0 -1.125rem;
+            width: 0.5rem;
+            height: 0.5rem;
+            background-color: #EF4E31;
+            content: ''; }
+            @media (min-width: 768px) {
+              body.projects .projects-wrap .project-overlay ul li:before {
+                margin: 0.6vw 0 0 -2vw;
+                width: 1vw;
+                height: 1vw; } }
+          @media (min-width: 768px) {
+            body.projects .projects-wrap .project-overlay ul li {
+              font-size: 2vw; } }
+      body.projects .projects-wrap .project-overlay a.to-website {
+        margin: auto;
+        width: auto;
+        height: auto; }
+      body.projects .projects-wrap .project-overlay a.launch {
+        width: 175px;
+        height: auto;
+        text-align: center;
+        background: #fff;
+        padding: 20px 0;
+        margin: 50px auto; }
+        @media (min-width: 768px) {
+          body.projects .projects-wrap .project-overlay a.launch {
+            font-size: 2vw;
+            width: 15vw;
+            padding: 1vw 0;
+            margin: 5vw auto; } }
+        body.projects .projects-wrap .project-overlay a.launch:hover {
+          background: #EF4E31;
+          color: #fff; }
+      body.projects .projects-wrap .project-overlay.deutsch .textWrap {
+        width: 17.5em; }
+        @media (min-width: 768px) {
+          body.projects .projects-wrap .project-overlay.deutsch .textWrap {
+            width: 36.5vw; } }
+      body.projects .projects-wrap .project-overlay.target .textWrap:first-of-type {
+        width: 9.5em; }
+        @media (min-width: 768px) {
+          body.projects .projects-wrap .project-overlay.target .textWrap:first-of-type {
+            width: 20vw; } }
+      body.projects .projects-wrap .project-overlay.target .textWrap:nth-of-type(2) {
+        width: 11.5em;
+        margin-top: .25em; }
+        @media (min-width: 768px) {
+          body.projects .projects-wrap .project-overlay.target .textWrap:nth-of-type(2) {
+            margin-top: .5vw;
+            width: 46.5vw; } }
+      body.projects .projects-wrap .project-overlay.vw .textWrap {
+        width: 10.5em; }
+        @media (min-width: 768px) {
+          body.projects .projects-wrap .project-overlay.vw .textWrap {
+            width: 22.5vw; } }
+      body.projects .projects-wrap .project-overlay.cmab .textWrap {
+        width: 12.5em; }
+        @media (min-width: 768px) {
+          body.projects .projects-wrap .project-overlay.cmab .textWrap {
+            width: 40vw; } }
+      body.projects .projects-wrap .project-overlay.fosterfarms .textWrap {
+        width: 15.5em; }
+        @media (min-width: 768px) {
+          body.projects .projects-wrap .project-overlay.fosterfarms .textWrap {
+            width: 49vw; } }
+        @media (max-width: 767px) {
+          body.projects .projects-wrap .project-overlay.fosterfarms .textWrap h2 {
+            font-size: 1.25rem; } }
+      body.projects .projects-wrap .project-overlay.vw-sharks .textWrap {
+        width: 14.5em; }
+        @media (min-width: 768px) {
+          body.projects .projects-wrap .project-overlay.vw-sharks .textWrap {
+            width: 31vw; } }
+      body.projects .projects-wrap .project-overlay.carnet .textWrap {
+        width: 15.7em; }
+        @media (min-width: 768px) {
+          body.projects .projects-wrap .project-overlay.carnet .textWrap {
+            width: 33vw; } }
+      body.projects .projects-wrap .project-overlay.vf .textWrap {
+        width: 14.2em; }
+        @media (min-width: 768px) {
+          body.projects .projects-wrap .project-overlay.vf .textWrap {
+            width: 30vw; } }
+        body.projects .projects-wrap .project-overlay.vf .textWrap:nth-of-type(2) {
+          margin-top: .25em; }
   body.projects .textWrap {
     background-color: #171d22;
     width: 86vw; }
