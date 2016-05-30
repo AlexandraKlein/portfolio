@@ -384,7 +384,7 @@ button:focus {
   background-color: rgba(255, 255, 255, 0.8); }
 
 body:not(.home) #logoAnchor svg {
-  width: 20vw; }
+  width: 35vw; }
   body:not(.home) #logoAnchor svg .logo {
     fill: #EF4E31;
     -webkit-animation-name: fillUp;
