@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d75c47e-72e8-4c62-b6a7-708346790671" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/partials/_base.scss" afterPath="$PROJECT_DIR$/app/scss/partials/_base.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/main.css" afterPath="$PROJECT_DIR$/app/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/js/components/overlay.js" afterPath="$PROJECT_DIR$/app/js/components/overlay.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/css/pages/projects.css" afterPath="$PROJECT_DIR$/app/css/pages/projects.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/projects.html" afterPath="$PROJECT_DIR$/app/projects.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/scss/pages/projects.scss" afterPath="$PROJECT_DIR$/app/scss/pages/projects.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -57,8 +54,8 @@
       <file leaf-file-name="projects.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/scss/pages/projects.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.73349935">
-              <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+            <state vertical-scroll-proportion="0.31382316">
+              <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -646,7 +643,13 @@
       <option name="project" value="LOCAL" />
       <updated>1464634288787</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Projects overlay copy.">
+      <created>1464643037032</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1464643037032</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -698,7 +701,8 @@
     <MESSAGE value="Projects layout." />
     <MESSAGE value="Projects finish." />
     <MESSAGE value="Projects overlay" />
-    <option name="LAST_COMMIT_MESSAGE" value="Projects overlay" />
+    <MESSAGE value="Projects overlay copy." />
+    <option name="LAST_COMMIT_MESSAGE" value="Projects overlay copy." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -990,8 +994,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/scss/pages/projects.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.73349935">
-          <caret line="32" column="26" selection-start-line="32" selection-start-column="26" selection-end-line="32" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.31382316">
+          <caret line="53" column="31" selection-start-line="53" selection-start-column="31" selection-end-line="53" selection-end-column="31" />
           <folding />
         </state>
       </provider>

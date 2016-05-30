@@ -51,8 +51,8 @@ body.projects {
     @extend .flex-row;
 
     a {
-      width: calc(100vw - 1.5rem);
-      height: calc(100vw - 1.5rem);
+      width: calc(100vw - 3em);
+      height: calc(100vw - 3em);
       display: block;
       position: relative;
 
@@ -190,11 +190,12 @@ body.projects {
       ul {
         width: 65vw;
         margin: 10vw auto;
-        height: calc(100% + 150px);
+        height: calc(100% + 100px);
         overflow: visible;
 
         @include tablet {
           width: 50vw;
+          height: auto;
         }
 
         li {
@@ -369,7 +370,7 @@ body.projects {
       margin: 10vw auto 5vw;
 
       @include mobile {
-        width: 18.5em;
+        width: 15.5em;
       }
     }
 
@@ -383,7 +384,7 @@ body.projects {
       text-align: center;
 
       @include mobile {
-        font-size: 2em;
+        font-size: 1.6em;
       }
     }
   }
