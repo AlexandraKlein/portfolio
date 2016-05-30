@@ -88,6 +88,7 @@ body {
           right: 28px;
           height: 100%;
           width: 58px;
+          z-index: 1;
 
           .hamburger {
             cursor: pointer;
@@ -142,7 +143,6 @@ body {
                   transform: rotate(-310deg);
                   top: 12px;
                 }
-
               }
             }
           }

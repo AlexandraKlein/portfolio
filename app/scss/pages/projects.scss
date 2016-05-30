@@ -107,12 +107,67 @@ body.projects {
         }
       }
     }
+
+    .project-overlay {
+      height: 0;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: $white;
+      z-index: 999999;
+      display: none;
+
+      &.open {
+        height: 100%;
+        display: block;
+
+        .close {
+          cursor: pointer;
+          position: absolute;
+          top: 1.5em;
+          right: 1em;
+          height: 50px;
+          width: 50px;
+
+          span {
+            background-color: $slate-gray;
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 100%;
+
+            &:first-child{
+              transform: rotate(135deg);
+              top: 12px;
+            }
+
+            &:nth-child(2){
+              opacity: 0;
+              background-color: $slate-gray;
+            }
+
+            &:nth-child(3) {
+              transform: rotate(-310deg);
+              top: 12px;
+            }
+          }
+        }
+      }
+    }
   }
 
   .textWrap {
     background-color: $off-black;
     width: 86vw;
-    margin: 10vw auto 5vw;
+
+    &.clients {
+      margin: 10vw auto 5vw;
+
+      @include mobile {
+        width: 18.5em;
+      }
+    }
 
     @include mobile {
       width: 12.7em;

@@ -27,16 +27,8 @@ $( document ).ready(function() {
     /**
      * SVG Vivus Animation
      */
-        var hi = new Vivus('machine', {type: 'scenario-sync', duration: 7}, function () {
-            if (console) {
-                console.log('Animation finished. [log triggered from callback]');
-            }
-        });
-        var hello = new Vivus('responsive', {type: 'scenario-sync', duration: 7}, function () {
-            if (console) {
-                console.log('Animation finished. [log triggered from callback]');
-            }
-        });
+        var hi = new Vivus('machine', {type: 'scenario-sync', duration: 7});
+        var hello = new Vivus('responsive', {type: 'scenario-sync', duration: 7});
     }
 
     /**

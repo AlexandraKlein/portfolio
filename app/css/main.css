@@ -121,7 +121,8 @@ body {
           top: 44px;
           right: 28px;
           height: 100%;
-          width: 58px; }
+          width: 58px;
+          z-index: 1; }
           body .main .main-header .header-bar a.open-menu .hamburger {
             cursor: pointer;
             display: block;
@@ -754,10 +755,50 @@ body.projects {
         transition: all .25s; }
         body.projects .projects-wrap a .hover:hover {
           background-color: transparent; }
+    body.projects .projects-wrap .project-overlay {
+      height: 0;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #fff;
+      z-index: 999999;
+      display: none; }
+      body.projects .projects-wrap .project-overlay.open {
+        height: 100%;
+        display: block; }
+        body.projects .projects-wrap .project-overlay.open .close {
+          cursor: pointer;
+          position: absolute;
+          top: 1.5em;
+          right: 1em;
+          height: 50px;
+          width: 50px; }
+          body.projects .projects-wrap .project-overlay.open .close span {
+            background-color: #515052;
+            display: block;
+            position: absolute;
+            height: 2px;
+            width: 100%; }
+            body.projects .projects-wrap .project-overlay.open .close span:first-child {
+              -webkit-transform: rotate(135deg);
+                      transform: rotate(135deg);
+              top: 12px; }
+            body.projects .projects-wrap .project-overlay.open .close span:nth-child(2) {
+              opacity: 0;
+              background-color: #515052; }
+            body.projects .projects-wrap .project-overlay.open .close span:nth-child(3) {
+              -webkit-transform: rotate(-310deg);
+                      transform: rotate(-310deg);
+              top: 12px; }
   body.projects .textWrap {
     background-color: #171d22;
-    width: 86vw;
-    margin: 10vw auto 5vw; }
+    width: 86vw; }
+    body.projects .textWrap.clients {
+      margin: 10vw auto 5vw; }
+      @media (max-width: 767px) {
+        body.projects .textWrap.clients {
+          width: 18.5em; } }
     @media (max-width: 767px) {
       body.projects .textWrap {
         width: 12.7em; } }
