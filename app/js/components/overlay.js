@@ -1,37 +1,26 @@
 $( document ).ready(function() {
 
-    var body = $('body'),
-        overlay = $('.project-overlay'),
-        close = $('.close'),
-        project = $('a.project-target'),
-        isOpen = body.hasClass('open'),
-        scrollValue = isOpen ? -parseInt(body[0].style.top) : body.scrollTop();
+    var close = $('.close'),
+        project = $('a.project-target');
 
+    //Open overlay
     project.click(function(e){
         var body = $('body'),
-            overlay = $('.project-overlay'),
-            close = $('.close'),
-            project = $('a.project-target'),
             isOpen = body.hasClass('open'),
             scrollValue = isOpen ? -parseInt(body[0].style.top) : body.scrollTop();
 
-        $(e.currentTarget).siblings('.project-overlay').addClass('open'); // adds 'height: 100%'
-        body.addClass('open'); // adds 'position: fixed'
+        $(e.currentTarget).siblings('.project-overlay').addClass('open');
+        body.addClass('open');
         close.addClass('open');
 
-        if(!isOpen){
-            body.css('top', -scrollValue);
-            overlay.scrollTop(0);
-        } else {
-            body.scrollTop(scrollValue);
-        }
+        body.css('top', -scrollValue);
     });
 
-    close.click(function (e) {
+    //Close overlay
+    close.click(function () {
 
         var body = $('body'),
             overlay = $('.project-overlay'),
-            close = $('.close'),
             isOpen = body.hasClass('open'),
             scrollValue = isOpen ? -parseInt(body[0].style.top) : body.scrollTop();
 
@@ -39,11 +28,6 @@ $( document ).ready(function() {
         body.removeClass('open');
         close.removeClass('open');
 
-        if(!isOpen){
-            body.css('top', -scrollValue);
-            overlay.scrollTop(0);
-        } else {
-            body.scrollTop(scrollValue);
-        }
+        body.scrollTop(scrollValue);
     });
 });
