@@ -1,3 +1,6 @@
+@import "../partials/variables";
+@import "../partials/mixins";
+
 .flex-both-align {
     display: flex;
     align-items: center;
@@ -35,4 +38,11 @@
     border-bottom: 2px solid $bg-color;
     border-top: 2px solid $bg-color;
     box-shadow: 0 0 0 10px $orange;
+}
+
+.mobile-hide {
+
+    @include mobile {
+        display: none;
+    }
 }
