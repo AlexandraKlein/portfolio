@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Khand:700);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800italic);
-.flex-both-align, body.about #intro .head-wrap {
+.flex-both-align, body.about #intro .head-wrap, body.about .links {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -12,7 +12,7 @@
       -ms-flex-pack: center;
           justify-content: center; }
 
-.flex-row {
+.flex-row, body.about .images-grid {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -83,3 +83,56 @@ body.about #intro {
       @media (max-width: 767px) {
         body.about #intro .textWrap h1 {
           font-size: 3.6em; } }
+
+body.about .links a {
+  padding: 2vw; }
+  body.about .links a svg {
+    width: 4vw;
+    fill: #171d22; }
+  body.about .links a:hover svg {
+    fill: #EF4E31; }
+
+body.about .images-grid {
+  margin-top: 5vw; }
+  body.about .images-grid div,
+  body.about .images-grid div > figure {
+    width: calc(100vw - 1.5em);
+    height: calc(100vw - 1.5em); }
+    @media (min-width: 768px) {
+      body.about .images-grid div,
+      body.about .images-grid div > figure {
+        width: calc(50vw - 1.5em);
+        height: calc(50vw - 1.5em); } }
+  body.about .images-grid .ali-vr {
+    background: url("../../images/about/ali-vr.jpg") center center no-repeat;
+    background-size: cover; }
+  body.about .images-grid .ali-minka {
+    background: url("../../images/about/ali-minka.jpg") center center no-repeat;
+    background-size: cover; }
+  body.about .images-grid div {
+    background: #171d22 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42053/noise.gif) center center no-repeat;
+    background-size: cover; }
+    body.about .images-grid div figure h2 {
+      color: rgba(255, 255, 255, 0.8); }
+      @media (max-width: 767px) {
+        body.about .images-grid div figure h2 {
+          font-size: 11vw;
+          text-align: center; } }
+    body.about .images-grid div figure p {
+      color: rgba(255, 255, 255, 0.8);
+      position: relative;
+      font-size: 3.5vw;
+      padding: 0 10vw 0 20vw;
+      margin: 3vw 1vw 1vw; }
+      @media (min-width: 768px) {
+        body.about .images-grid div figure p {
+          font-size: 1.5vw;
+          padding: 0 1vw 0 8vw;
+          margin: 3vw 1vw 1vw; } }
+      body.about .images-grid div figure p span {
+        position: absolute;
+        left: 0;
+        top: 0; }
+        @media (max-width: 767px) {
+          body.about .images-grid div figure p span {
+            left: 5px; } }

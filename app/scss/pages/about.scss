@@ -42,4 +42,92 @@ body.about {
     }
   }
 
+  .links {
+    @extend .flex-both-align;
+
+    a {
+      padding: 2vw;
+
+      svg {
+        width: 4vw;
+        fill: $off-black;
+      }
+
+      &:hover {
+
+        svg {
+          fill: $orange;
+        }
+      }
+    }
+  }
+
+  .images-grid {
+    margin-top: 5vw;
+    @extend .flex-row;
+
+    div,
+    div > figure,{
+
+      width: calc(100vw - 1.5em);
+      height: calc(100vw - 1.5em);
+
+      @include tablet {
+        width: calc(50vw - 1.5em);
+        height: calc(50vw - 1.5em);
+      }
+    }
+
+    .ali-vr {
+      background: url("#{$root-asset-path}about/ali-vr.jpg") center center no-repeat;
+      background-size: cover;
+    }
+
+    .ali-minka {
+      background: url("#{$root-asset-path}about/ali-minka.jpg") center center no-repeat;
+      background-size: cover;
+    }
+
+    div {
+      background: $off-black url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/42053/noise.gif) center center no-repeat;
+      background-size: cover;
+
+      figure {
+
+        h2 {
+          color: $white-80;
+
+          @include mobile {
+            font-size: 11vw;
+            text-align: center;;
+          }
+        }
+
+        p {
+          color: $white-80;
+          position: relative;
+          font-size: 3.5vw;
+          padding: 0 10vw 0 20vw;
+          margin: 3vw 1vw 1vw;
+
+          @include tablet {
+            font-size: 1.5vw;
+            padding: 0 1vw 0 8vw;
+            margin: 3vw 1vw 1vw;
+          }
+
+          span {
+            position: absolute;
+            left: 0;
+            top: 0;
+
+            @include mobile {
+              left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+
 }
