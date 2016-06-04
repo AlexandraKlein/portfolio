@@ -57,7 +57,7 @@ li {
   color: $slate-gray;
   font-family: $body-font;
   margin: 30px 30px 10px;
-  @include font-size(16px);
+  @include font-size(18px);
 
   @include tablet {
     @include font-size(20px);

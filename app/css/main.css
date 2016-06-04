@@ -190,15 +190,13 @@ body {
   margin: 0 30px; }
   @media (max-width: 767px) {
     .cbp-so-section h3 {
-      font-size: 28px; }
-      .cbp-so-section h3 span {
-        display: none; } }
+      font-size: 28px; } }
 
 .cbp-so-section p {
   font-size: 2vw; }
   @media (max-width: 767px) {
     .cbp-so-section p {
-      font-size: 18px; } }
+      font-size: 1.125rem; } }
 
 /* Sides */
 .cbp-so-side {
@@ -289,7 +287,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center; } }
 
-.flex-both-align, body.projects #intro .head-wrap {
+.flex-both-align, body.about #intro .head-wrap, body.projects #intro .head-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -391,7 +389,7 @@ li {
   color: #515052;
   font-family: "Open Sans", sans-serif;
   margin: 30px 30px 10px;
-  font-size: 1rem; }
+  font-size: 1.125rem; }
   @media (min-width: 768px) {
     p,
     li {
@@ -440,7 +438,7 @@ body:not(.home) #logoAnchor svg {
   100% {
     fill: #EF4E31; } }
 
-.flex-both-align, body.projects #intro .head-wrap {
+.flex-both-align, body.about #intro .head-wrap, body.projects #intro .head-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -639,7 +637,7 @@ body.home div#map_canvas {
   body.home div#map_canvas .gm-style .gmnoprint {
     z-index: -1 !important; }
 
-.flex-both-align, body.projects #intro .head-wrap {
+.flex-both-align, body.about #intro .head-wrap, body.projects #intro .head-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -697,7 +695,32 @@ body.home div#map_canvas {
   .mobile-hide {
     display: none; } }
 
-.flex-both-align, body.projects #intro .head-wrap {
+body.about #intro {
+  width: 80vw;
+  margin: 10vw auto 0; }
+  @media (max-width: 767px) {
+    body.about #intro .head-wrap {
+      display: block; }
+      body.about #intro .head-wrap svg {
+        display: block;
+        margin: auto; } }
+  body.about #intro .textWrap {
+    background-color: #171d22;
+    width: 39vw;
+    margin-left: 2vw; }
+    @media (max-width: 767px) {
+      body.about #intro .textWrap {
+        width: 12.7em;
+        margin: 20px auto; } }
+    body.about #intro .textWrap h1 {
+      color: #F5F5F5;
+      padding-top: 1vw;
+      text-align: center; }
+      @media (max-width: 767px) {
+        body.about #intro .textWrap h1 {
+          font-size: 3.6em; } }
+
+.flex-both-align, body.about #intro .head-wrap, body.projects #intro .head-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
