@@ -438,6 +438,21 @@ body:not(.home) #logoAnchor svg {
   100% {
     fill: #EF4E31; } }
 
+.divider.map {
+  border-bottom-width: 0; }
+
+div#map_canvas {
+  width: auto;
+  height: 250px; }
+  @media (min-width: 768px) {
+    div#map_canvas {
+      height: 20vw; } }
+  div#map_canvas .gm-style div:nth-child(2),
+  div#map_canvas .gm-style div:nth-child(6) {
+    z-index: -1 !important; }
+  div#map_canvas .gm-style .gmnoprint {
+    z-index: -1 !important; }
+
 .flex-both-align, body.about #intro .head-wrap, body.about .links, body.projects #intro .head-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -622,21 +637,6 @@ body.home .main {
       line-height: 2vw;
       font-size: 1.4vw; } }
 
-body.home .divider.map {
-  border-bottom-width: 0; }
-
-body.home div#map_canvas {
-  width: auto;
-  height: 250px; }
-  @media (min-width: 768px) {
-    body.home div#map_canvas {
-      height: 20vw; } }
-  body.home div#map_canvas .gm-style div:nth-child(2),
-  body.home div#map_canvas .gm-style div:nth-child(6) {
-    z-index: -1 !important; }
-  body.home div#map_canvas .gm-style .gmnoprint {
-    z-index: -1 !important; }
-
 .flex-both-align, body.about #intro .head-wrap, body.about .links, body.projects #intro .head-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -719,6 +719,12 @@ body.about #intro {
       @media (max-width: 767px) {
         body.about #intro .textWrap h1 {
           font-size: 3.6em; } }
+    body.about #intro .textWrap.contact {
+      width: 50vw; }
+      @media (max-width: 767px) {
+        body.about #intro .textWrap.contact {
+          width: 12.7em;
+          margin: 20px auto; } }
 
 body.about .links a {
   padding: 2vw; }
@@ -754,6 +760,11 @@ body.about .images-grid {
         body.about .images-grid div figure h2 {
           font-size: 11vw;
           text-align: center; } }
+    body.about .images-grid div figure h2 {
+      padding: 10px 0 0 0; }
+      @media (min-width: 768px) {
+        body.about .images-grid div figure h2 {
+          padding: 2vw 0 0 1vw; } }
     body.about .images-grid div figure p {
       color: rgba(255, 255, 255, 0.8);
       position: relative;

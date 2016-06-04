@@ -164,31 +164,6 @@ body.home {
     }
 
   }
-
-  .divider.map {
-    border-bottom-width: 0;
-  }
-
-  div#map_canvas {
-    width: auto;
-    height: 250px;
-
-    @include tablet {
-      height: 20vw;
-    }
-
-    .gm-style {
-
-      div:nth-child(2),
-      div:nth-child(6) {
-        z-index: -1 !important;
-      }
-
-      .gmnoprint {
-        z-index: -1 !important;
-      }
-    }
-  }
 }
 
 

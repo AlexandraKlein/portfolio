@@ -83,6 +83,12 @@ body.about #intro {
       @media (max-width: 767px) {
         body.about #intro .textWrap h1 {
           font-size: 3.6em; } }
+    body.about #intro .textWrap.contact {
+      width: 50vw; }
+      @media (max-width: 767px) {
+        body.about #intro .textWrap.contact {
+          width: 12.7em;
+          margin: 20px auto; } }
 
 body.about .links a {
   padding: 2vw; }
@@ -118,6 +124,11 @@ body.about .images-grid {
         body.about .images-grid div figure h2 {
           font-size: 11vw;
           text-align: center; } }
+    body.about .images-grid div figure h2 {
+      padding: 10px 0 0 0; }
+      @media (min-width: 768px) {
+        body.about .images-grid div figure h2 {
+          padding: 2vw 0 0 1vw; } }
     body.about .images-grid div figure p {
       color: rgba(255, 255, 255, 0.8);
       position: relative;

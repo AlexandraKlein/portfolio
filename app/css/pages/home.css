@@ -190,18 +190,3 @@ body.home .main {
     body.home .content .text-container p {
       line-height: 2vw;
       font-size: 1.4vw; } }
-
-body.home .divider.map {
-  border-bottom-width: 0; }
-
-body.home div#map_canvas {
-  width: auto;
-  height: 250px; }
-  @media (min-width: 768px) {
-    body.home div#map_canvas {
-      height: 20vw; } }
-  body.home div#map_canvas .gm-style div:nth-child(2),
-  body.home div#map_canvas .gm-style div:nth-child(6) {
-    z-index: -1 !important; }
-  body.home div#map_canvas .gm-style .gmnoprint {
-    z-index: -1 !important; }

@@ -39,6 +39,15 @@ body.about {
           font-size: 3.6em;
         }
       }
+
+      &.contact {
+        width: 50vw;
+
+        @include mobile {
+          width: 12.7em;
+          margin: 20px auto;
+        }
+      }
     }
   }
 
@@ -100,6 +109,14 @@ body.about {
           @include mobile {
             font-size: 11vw;
             text-align: center;;
+          }
+        }
+
+        h2 {
+          padding: 10px 0 0 0;
+
+          @include tablet {
+            padding: 2vw 0 0 1vw;
           }
         }
 
