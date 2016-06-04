@@ -52,6 +52,16 @@ body.home {
         margin-left: -8vw;
         margin-top: 1vw;
 
+        h1 {
+          line-height: 11.85vw;
+          padding-top: 0.8vw;
+        }
+
+        h2 {
+          line-height: 6.5vw;
+          padding-top: 0.5vw;
+        }
+
         h1,
         h2 {
           color: $off-black;

@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Syncopate);
+@import url(https://fonts.googleapis.com/css?family=Khand:700);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800italic);
 .flex-both-align, body.home .main {
@@ -104,6 +104,12 @@ body.home .main {
     body.home .main #intro .textWrap {
       margin-left: -8vw;
       margin-top: 1vw; }
+      body.home .main #intro .textWrap h1 {
+        line-height: 11.85vw;
+        padding-top: 0.8vw; }
+      body.home .main #intro .textWrap h2 {
+        line-height: 6.5vw;
+        padding-top: 0.5vw; }
       body.home .main #intro .textWrap h1,
       body.home .main #intro .textWrap h2 {
         color: #171d22;

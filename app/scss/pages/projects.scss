@@ -40,7 +40,7 @@ body.projects {
         padding-top: 1vw;
 
         @include mobile {
-          font-size: 2em;
+          font-size: 3.6em;
         }
       }
     }
@@ -186,6 +186,10 @@ body.projects {
           @include tablet {
             padding-top: 0.5vw;
           }
+
+          @include mobile {
+            font-size: 3.2em;
+          }
         }
       }
 
@@ -226,6 +230,10 @@ body.projects {
             font-size: 2vw;
           }
         }
+      }
+
+      h2 {
+        font-size: 7vw;
       }
 
       a.to-website {
@@ -323,7 +331,7 @@ body.projects {
 
           h2 {
             @include mobile {
-              @include font-size(20px);
+              @include font-size(35px);
             }
           }
         }
@@ -360,6 +368,12 @@ body.projects {
             width: 30vw;
           }
 
+          h2 {
+            @include mobile {
+              font-size: 3em;
+            }
+          }
+
           &:nth-of-type(2) {
             margin-top: .25em;
           }
@@ -374,6 +388,10 @@ body.projects {
 
     &.clients {
       margin: 10vw auto 5vw;
+      padding-top: 1.5vw;
+      text-align: center;
+      line-height: 12vw;
+      width: 80vw;
 
       @include mobile {
         width: 15.5em;
@@ -390,7 +408,7 @@ body.projects {
       text-align: center;
 
       @include mobile {
-        font-size: 1.6em;
+        font-size: 2.9em;
       }
     }
   }

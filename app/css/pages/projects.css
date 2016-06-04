@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Syncopate);
+@import url(https://fonts.googleapis.com/css?family=Khand:700);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800italic);
 .flex-both-align, body.projects #intro .head-wrap {
@@ -79,7 +79,7 @@ body.projects {
         padding-top: 1vw; }
         @media (max-width: 767px) {
           body.projects #intro .textWrap h1 {
-            font-size: 2em; } }
+            font-size: 3.6em; } }
   body.projects .projects-wrap {
     margin: 10vw auto 0;
     width: 100vw;
@@ -98,46 +98,46 @@ body.projects {
         width: 100%;
         height: 100%; }
         body.projects .projects-wrap a .project.web-deutsch {
-          background: url("../../new/images/projects/web-deutsch.jpg") center center no-repeat; }
+          background: url("../../images/projects/web-deutsch.jpg") center center no-repeat; }
         body.projects .projects-wrap a .project.web-vw {
-          background: url("../../new/images/projects/web-vw.jpg") center center no-repeat; }
+          background: url("../../images/projects/web-vw.jpg") center center no-repeat; }
         body.projects .projects-wrap a .project.web-vw-carnet {
-          background: url("../../new/images/projects/web-vw-carnet.jpg") center center no-repeat; }
+          background: url("../../images/projects/web-vw-carnet.jpg") center center no-repeat; }
         body.projects .projects-wrap a .project.web-cmab {
-          background: url("../../new/images/projects/web-cmab.jpg") center center no-repeat; }
+          background: url("../../images/projects/web-cmab.jpg") center center no-repeat; }
         body.projects .projects-wrap a .project.web-target-btc {
-          background: url("../../new/images/projects/web-target-btc.jpg") center center no-repeat; }
+          background: url("../../images/projects/web-target-btc.jpg") center center no-repeat; }
         body.projects .projects-wrap a .project.web-target-btc-awards {
-          background: url("../../new/images/projects/web-target-btc-awards.jpg") center center no-repeat; }
+          background: url("../../images/projects/web-target-btc-awards.jpg") center center no-repeat; }
         body.projects .projects-wrap a .project.web-fosterfarms {
-          background: url("../../new/images/projects/web-fosterfarms.jpg") center center no-repeat; }
+          background: url("../../images/projects/web-fosterfarms.jpg") center center no-repeat; }
         body.projects .projects-wrap a .project.web-vw-sharks-awards {
-          background: url("../../new/images/projects/web-vw-sharks-awards.jpg") center center no-repeat; }
+          background: url("../../images/projects/web-vw-sharks-awards.jpg") center center no-repeat; }
         body.projects .projects-wrap a .project.web-vf-tbtt {
-          background: url("../../new/images/projects/web-vf-tbtt.jpg") center center no-repeat; }
+          background: url("../../images/projects/web-vf-tbtt.jpg") center center no-repeat; }
       body.projects .projects-wrap a .logo {
         width: 50vw;
         height: 50vw;
         transition: all .75s;
         pointer-events: none; }
         body.projects .projects-wrap a .logo.cmab-logo {
-          background: url("../../new/images/logos/cmab-logo.svg") center center no-repeat; }
+          background: url("../../images/logos/cmab-logo.svg") center center no-repeat; }
         body.projects .projects-wrap a .logo.vw-logo {
-          background: url("../../new/images/logos/vw-logo.svg") center center no-repeat; }
+          background: url("../../images/logos/vw-logo.svg") center center no-repeat; }
         body.projects .projects-wrap a .logo.fosterfarms-logo {
-          background: url("../../new/images/logos/fosterfarms-logo.svg") center center no-repeat; }
+          background: url("../../images/logos/fosterfarms-logo.svg") center center no-repeat; }
         body.projects .projects-wrap a .logo.sevenup-logo {
-          background: url("../../new/images/logos/sevenup-logo.svg") center center no-repeat; }
+          background: url("../../images/logos/sevenup-logo.svg") center center no-repeat; }
         body.projects .projects-wrap a .logo.tacobell-logo {
-          background: url("../../new/images/logos/tacobell-logo.svg") center center no-repeat; }
+          background: url("../../images/logos/tacobell-logo.svg") center center no-repeat; }
         body.projects .projects-wrap a .logo.target-logo {
-          background: url("../../new/images/logos/target-logo.svg") center center no-repeat; }
+          background: url("../../images/logos/target-logo.svg") center center no-repeat; }
         body.projects .projects-wrap a .logo.deutsch-logo {
-          background: url("../../new/images/logos/deutsch-logo.svg") center center no-repeat; }
+          background: url("../../images/logos/deutsch-logo.svg") center center no-repeat; }
         body.projects .projects-wrap a .logo.vanityfair-logo {
-          background: url("../../new/images/logos/vanityfair-logo.svg") center center no-repeat; }
+          background: url("../../images/logos/vanityfair-logo.svg") center center no-repeat; }
         body.projects .projects-wrap a .logo.zillow-logo {
-          background: url("../../new/images/logos/zillow-logo.svg") center center no-repeat; }
+          background: url("../../images/logos/zillow-logo.svg") center center no-repeat; }
         @media (min-width: 768px) {
           body.projects .projects-wrap a .logo {
             width: 40vw;
@@ -208,6 +208,9 @@ body.projects {
           @media (min-width: 768px) {
             body.projects .projects-wrap .project-overlay .textWrap h2 {
               padding-top: 0.5vw; } }
+          @media (max-width: 767px) {
+            body.projects .projects-wrap .project-overlay .textWrap h2 {
+              font-size: 3.2em; } }
       body.projects .projects-wrap .project-overlay section {
         height: 100%; }
       body.projects .projects-wrap .project-overlay ul {
@@ -236,6 +239,8 @@ body.projects {
           @media (min-width: 768px) {
             body.projects .projects-wrap .project-overlay ul li {
               font-size: 2vw; } }
+      body.projects .projects-wrap .project-overlay h2 {
+        font-size: 7vw; }
       body.projects .projects-wrap .project-overlay a.to-website {
         margin: auto;
         width: auto;
@@ -290,7 +295,7 @@ body.projects {
             width: 49vw; } }
         @media (max-width: 767px) {
           body.projects .projects-wrap .project-overlay.fosterfarms .textWrap h2 {
-            font-size: 1.25rem; } }
+            font-size: 2.1875rem; } }
       body.projects .projects-wrap .project-overlay.vw-sharks .textWrap {
         width: 14.5em; }
         @media (min-width: 768px) {
@@ -306,13 +311,20 @@ body.projects {
         @media (min-width: 768px) {
           body.projects .projects-wrap .project-overlay.vf .textWrap {
             width: 30vw; } }
+        @media (max-width: 767px) {
+          body.projects .projects-wrap .project-overlay.vf .textWrap h2 {
+            font-size: 3em; } }
         body.projects .projects-wrap .project-overlay.vf .textWrap:nth-of-type(2) {
           margin-top: .25em; }
   body.projects .textWrap {
     background-color: #171d22;
     width: 86vw; }
     body.projects .textWrap.clients {
-      margin: 10vw auto 5vw; }
+      margin: 10vw auto 5vw;
+      padding-top: 1.5vw;
+      text-align: center;
+      line-height: 12vw;
+      width: 80vw; }
       @media (max-width: 767px) {
         body.projects .textWrap.clients {
           width: 15.5em; } }
@@ -325,7 +337,7 @@ body.projects {
       text-align: center; }
       @media (max-width: 767px) {
         body.projects .textWrap h1 {
-          font-size: 1.6em; } }
+          font-size: 2.9em; } }
   body.projects .client-wrap {
     margin: auto;
     -webkit-justify-content: center;
@@ -340,8 +352,8 @@ body.projects {
           width: calc(30vw - 3em);
           height: calc(30vw - 3em); } }
       body.projects .client-wrap .client.zillow-logo {
-        background: url("../../new/images/logos/zillow-logo.svg") center center no-repeat; }
+        background: url("../../images/logos/zillow-logo.svg") center center no-repeat; }
       body.projects .client-wrap .client.sevenup-logo {
-        background: url("../../new/images/logos/sevenup-logo.svg") center center no-repeat; }
+        background: url("../../images/logos/sevenup-logo.svg") center center no-repeat; }
       body.projects .client-wrap .client.tacobell-logo {
-        background: url("../../new/images/logos/tacobell-logo.svg") center center no-repeat; }
+        background: url("../../images/logos/tacobell-logo.svg") center center no-repeat; }
