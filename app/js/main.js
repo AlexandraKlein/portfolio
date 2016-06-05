@@ -38,5 +38,4 @@ $( document ).ready(function() {
         console.log('Page: About');
     }
 
-
 });

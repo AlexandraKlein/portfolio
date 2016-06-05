@@ -1,0 +1,105 @@
+@import "../partials/typography";
+@import "../partials/variables";
+@import "../partials/snippets";
+@import "../partials/mixins";
+
+body.contact {
+
+  @include desktop {
+    overflow: visible;
+  }
+
+  #intro {
+    width: 80vw;
+    margin: 10vw auto 0;
+    .head-wrap {
+      @extend .flex-both-align;
+
+      @include mobile {
+        display: block;
+
+        svg {
+          display: block;
+          margin: auto;
+        }
+      }
+    }
+
+    .textWrap {
+      background-color: $off-black;
+      width: 50vw;
+
+      @include mobile {
+        width: 12.7em;
+        margin: 20px auto;
+      }
+
+      h1 {
+        color: $bg-color;
+        padding-top: 1vw;
+        text-align: center;
+
+        @include mobile {
+          font-size: 3.6em;
+        }
+      }
+    }
+
+    .links {
+      @extend .flex-both-align;
+
+      a {
+        padding: 2vw;
+
+        svg {
+          width: 4vw;
+          fill: $off-black;
+        }
+
+        &:hover {
+
+          svg {
+            fill: $orange;
+          }
+        }
+      }
+    }
+  }
+
+  .contact-me {
+    margin: 40px 0 20px;
+    @extend .flex-both-align;
+
+    @include mobile {
+      display: block;
+
+      p {
+        text-align: center;
+      }
+    }
+  }
+
+  div#map_canvas {
+
+    @include tablet {
+      height: 75vw;
+    }
+
+    @include desktop {
+      height: 50vw;
+    }
+
+    .gm-style {
+
+      div:nth-child(2),
+      div:nth-child(6) {
+        z-index: -1 !important;
+      }
+
+      .gmnoprint {
+        z-index: -1 !important;
+      }
+    }
+  }
+}
+

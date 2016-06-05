@@ -13,6 +13,9 @@
 @import url(https://fonts.googleapis.com/css?family=Khand:700);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800italic);
+@import url(https://fonts.googleapis.com/css?family=Khand:700);
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800italic);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -287,7 +290,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center; } }
 
-.flex-both-align, body.about #intro .head-wrap, body.about .links, body.projects #intro .head-wrap {
+.flex-both-align, body.about #intro .head-wrap, body.about .links, body.projects #intro .head-wrap, body.projects .client-wrap, body.contact #intro .head-wrap, body.contact #intro .links, body.contact .contact-me {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -298,7 +301,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.flex-row, body.about .images-grid, body.projects .projects-wrap, body.projects .client-wrap {
+.flex-row, body.about .images-grid, body.projects .projects-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -443,7 +446,7 @@ body:not(.home) #logoAnchor svg {
 
 div#map_canvas {
   width: auto;
-  height: 250px; }
+  height: 500px; }
   @media (min-width: 768px) {
     div#map_canvas {
       height: 20vw; } }
@@ -453,7 +456,7 @@ div#map_canvas {
   div#map_canvas .gm-style .gmnoprint {
     z-index: -1 !important; }
 
-.flex-both-align, body.about #intro .head-wrap, body.about .links, body.projects #intro .head-wrap {
+.flex-both-align, body.about #intro .head-wrap, body.about .links, body.projects #intro .head-wrap, body.projects .client-wrap, body.contact #intro .head-wrap, body.contact #intro .links, body.contact .contact-me {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -464,7 +467,7 @@ div#map_canvas {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.flex-row, body.about .images-grid, body.projects .projects-wrap, body.projects .client-wrap {
+.flex-row, body.about .images-grid, body.projects .projects-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -637,7 +640,7 @@ body.home .main {
       line-height: 2vw;
       font-size: 1.4vw; } }
 
-.flex-both-align, body.about #intro .head-wrap, body.about .links, body.projects #intro .head-wrap {
+.flex-both-align, body.about #intro .head-wrap, body.about .links, body.projects #intro .head-wrap, body.projects .client-wrap, body.contact #intro .head-wrap, body.contact #intro .links, body.contact .contact-me {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -648,7 +651,7 @@ body.home .main {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.flex-row, body.about .images-grid, body.projects .projects-wrap, body.projects .client-wrap {
+.flex-row, body.about .images-grid, body.projects .projects-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -719,12 +722,6 @@ body.about #intro {
       @media (max-width: 767px) {
         body.about #intro .textWrap h1 {
           font-size: 3.6em; } }
-    body.about #intro .textWrap.contact {
-      width: 50vw; }
-      @media (max-width: 767px) {
-        body.about #intro .textWrap.contact {
-          width: 12.7em;
-          margin: 20px auto; } }
 
 body.about .links a {
   padding: 2vw; }
@@ -784,7 +781,7 @@ body.about .images-grid {
           body.about .images-grid div figure p span {
             left: 5px; } }
 
-.flex-both-align, body.about #intro .head-wrap, body.about .links, body.projects #intro .head-wrap {
+.flex-both-align, body.about #intro .head-wrap, body.about .links, body.projects #intro .head-wrap, body.projects .client-wrap, body.contact #intro .head-wrap, body.contact #intro .links, body.contact .contact-me {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -795,7 +792,7 @@ body.about .images-grid {
       -ms-flex-pack: center;
           justify-content: center; }
 
-.flex-row, body.about .images-grid, body.projects .projects-wrap, body.projects .client-wrap {
+.flex-row, body.about .images-grid, body.projects .projects-wrap {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -1011,6 +1008,9 @@ body.projects {
             height: auto; } }
         body.projects .projects-wrap .project-overlay ul li {
           margin-left: 20vw; }
+          @media (max-width: 767px) {
+            body.projects .projects-wrap .project-overlay ul li {
+              margin-top: 0; } }
           body.projects .projects-wrap .project-overlay ul li:before {
             position: absolute;
             margin: 0.4375rem 0 0 -1.125rem;
@@ -1125,22 +1125,140 @@ body.projects {
       @media (max-width: 767px) {
         body.projects .textWrap h1 {
           font-size: 2.9em; } }
-  body.projects .client-wrap {
-    margin: auto;
-    -webkit-justify-content: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    body.projects .client-wrap .client {
-      background-size: cover !important;
-      width: calc(75vw - 3em);
-      height: 50vw; }
-      @media (min-width: 768px) {
-        body.projects .client-wrap .client {
-          width: calc(30vw - 3em);
-          height: calc(30vw - 3em); } }
-      body.projects .client-wrap .client.zillow-logo {
-        background: url("../../images/logos/zillow-logo.svg") center center no-repeat; }
-      body.projects .client-wrap .client.sevenup-logo {
-        background: url("../../images/logos/sevenup-logo.svg") center center no-repeat; }
-      body.projects .client-wrap .client.tacobell-logo {
-        background: url("../../images/logos/tacobell-logo.svg") center center no-repeat; }
+  @media (max-width: 767px) {
+    body.projects .client-wrap {
+      display: block !important; } }
+  body.projects .client-wrap .client {
+    background-size: cover !important;
+    width: calc(75vw - 3em);
+    height: 50vw; }
+    @media (max-width: 767px) {
+      body.projects .client-wrap .client {
+        display: block;
+        margin: auto; } }
+    @media (min-width: 768px) {
+      body.projects .client-wrap .client {
+        width: calc(33vw - 3em);
+        height: calc(33vw - 3em); } }
+    body.projects .client-wrap .client.zillow-logo {
+      background: url("../../images/logos/zillow-logo.svg") center center no-repeat; }
+    body.projects .client-wrap .client.sevenup-logo {
+      background: url("../../images/logos/sevenup-logo.svg") center center no-repeat; }
+    body.projects .client-wrap .client.tacobell-logo {
+      background: url("../../images/logos/tacobell-logo.svg") center center no-repeat; }
+
+.flex-both-align, body.about #intro .head-wrap, body.about .links, body.projects #intro .head-wrap, body.projects .client-wrap, body.contact #intro .head-wrap, body.contact #intro .links, body.contact .contact-me {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.flex-row, body.about .images-grid, body.projects .projects-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.align-both, body.projects .projects-wrap a .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.divider {
+  display: block;
+  margin: 20px auto 0;
+  width: calc(100% - 20px);
+  height: 50px;
+  background: #EF4E31;
+  border-bottom: 2px solid #F5F5F5;
+  border-top: 2px solid #F5F5F5;
+  box-shadow: 0 0 0 10px #EF4E31; }
+
+@media (max-width: 767px) {
+  .mobile-hide {
+    display: none; } }
+
+@media (min-width: 1024px) {
+  body.contact {
+    overflow: visible; } }
+
+body.contact #intro {
+  width: 80vw;
+  margin: 10vw auto 0; }
+  @media (max-width: 767px) {
+    body.contact #intro .head-wrap {
+      display: block; }
+      body.contact #intro .head-wrap svg {
+        display: block;
+        margin: auto; } }
+  body.contact #intro .textWrap {
+    background-color: #171d22;
+    width: 50vw; }
+    @media (max-width: 767px) {
+      body.contact #intro .textWrap {
+        width: 12.7em;
+        margin: 20px auto; } }
+    body.contact #intro .textWrap h1 {
+      color: #F5F5F5;
+      padding-top: 1vw;
+      text-align: center; }
+      @media (max-width: 767px) {
+        body.contact #intro .textWrap h1 {
+          font-size: 3.6em; } }
+  body.contact #intro .links a {
+    padding: 2vw; }
+    body.contact #intro .links a svg {
+      width: 4vw;
+      fill: #171d22; }
+    body.contact #intro .links a:hover svg {
+      fill: #EF4E31; }
+
+body.contact .contact-me {
+  margin: 40px 0 20px; }
+  @media (max-width: 767px) {
+    body.contact .contact-me {
+      display: block; }
+      body.contact .contact-me p {
+        text-align: center; } }
+
+@media (min-width: 768px) {
+  body.contact div#map_canvas {
+    height: 75vw; } }
+
+@media (min-width: 1024px) {
+  body.contact div#map_canvas {
+    height: 50vw; } }
+
+body.contact div#map_canvas .gm-style div:nth-child(2),
+body.contact div#map_canvas .gm-style div:nth-child(6) {
+  z-index: -1 !important; }
+
+body.contact div#map_canvas .gm-style .gmnoprint {
+  z-index: -1 !important; }

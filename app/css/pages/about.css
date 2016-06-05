@@ -83,12 +83,6 @@ body.about #intro {
       @media (max-width: 767px) {
         body.about #intro .textWrap h1 {
           font-size: 3.6em; } }
-    body.about #intro .textWrap.contact {
-      width: 50vw; }
-      @media (max-width: 767px) {
-        body.about #intro .textWrap.contact {
-          width: 12.7em;
-          margin: 20px auto; } }
 
 body.about .links a {
   padding: 2vw; }

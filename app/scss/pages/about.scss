@@ -39,15 +39,6 @@ body.about {
           font-size: 3.6em;
         }
       }
-
-      &.contact {
-        width: 50vw;
-
-        @include mobile {
-          width: 12.7em;
-          margin: 20px auto;
-        }
-      }
     }
   }
 
@@ -146,5 +137,4 @@ body.about {
       }
     }
   }
-
 }

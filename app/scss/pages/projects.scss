@@ -211,6 +211,10 @@ body.projects {
         li {
           margin-left: 20vw;
 
+          @include mobile {
+            margin-top: 0;
+          }
+
           &:before {
             position: absolute;
             margin: 0.4375rem 0 0 -1.125rem;
@@ -414,18 +418,25 @@ body.projects {
   }
 
   .client-wrap {
-    margin: auto;
-    @extend .flex-row;
-    justify-content: center;
+    @extend .flex-both-align;
+
+    @include mobile {
+      display: block !important;
+    }
 
     .client {
       background-size: cover !important;
       width: calc(75vw - 3em);
       height: 50vw;
 
+      @include mobile {
+        display: block;
+        margin: auto;
+      }
+
       @include tablet {
-        width: calc(30vw - 3em);
-        height: calc(30vw - 3em);
+        width: calc(33vw - 3em);
+        height: calc(33vw - 3em);
       }
 
       $project-tiles-names: zillow-logo sevenup-logo tacobell-logo;

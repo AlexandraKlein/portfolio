@@ -17,17 +17,18 @@
     <!--endbuild-->
 
 </head>
-<body class="about">
+<body class="contact" onload="initialize();">
 
 <!--build:js js/main.min.js -->
 <script src="js/lib/jquery.min.js"></script>
 <script src="js/lib/vivus.min.js"></script>
-<!--<script src="js/lib/modernizr.custom.js"></script>-->
-<!--<script src="js/lib/classie.js"></script>-->
-<!--<script src="js/lib/cbpScroller.js"></script>-->
 <script src="js/components/navigation.js"></script>
 <script src="js/main.js"></script>
 <!-- endbuild -->
+
+<!-- Google Maps API -->
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBTZfSsDcKzkeWqFyD7cTeo3GJQcdhvgs0"
+        type="text/javascript"></script>
 
 <div class ="menu">
     <nav class="nav">
@@ -107,8 +108,114 @@
 
     </div>
 
+    <div class="contact-me">
+        <p>Email Me:
+            <a href="mailto:me@aliklein.com?Subject=Yo,%20Ali!" target="_top">Send Mail</a>
+        </p>
+
+        <p>Call Me:
+            <a href="tel:4129530814">412.953.0814</a>
+        </p>
+    </div>
 
 </section>
+
+<div class="divider map"></div>
+
+<form id="form1" runat="server">
+    <div id="map_canvas"></div>
+</form>
+
+<script type="text/javascript">
+    new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
+
+    function initialize() {
+        var latlng = new google.maps.LatLng(33.9757183,-118.4653244);
+
+        var myOptions = {
+            zoom: 12,
+            center: latlng,
+            mapTypeControlOptions: {mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'styled']},
+            streetViewControl: false,
+            mapTypeControl: false,
+            panControl: true,
+            scaleControl: false,
+            zoomControl: false
+        };
+
+        var map = new google.maps.Map(document.getElementById("map_canvas"),myOptions);
+
+        var image = 'images/map-marker.png';
+        var myMarker = new google.maps.Marker({
+            position: latlng,
+            map: map,
+            title: 'Ali Klein, Marina del Rey',
+            icon: image
+        });
+
+        var stylez = [
+            {
+                featureType: 'water', // set the water color
+                elementType: 'geometry.fill', // apply the color only to the fill
+                stylers: [
+                    { color: '#EF4E31' }
+                ]
+            },{
+                featureType: 'landscape.natural', // set the natural landscape
+                elementType: 'all',
+                stylers: [
+                    { hue: '#F5F5F5' },
+                    { lightness: -35 }
+                ]
+            },{
+                featureType: 'landscape', // set the natural landscape
+                elementType: 'all',
+                stylers: [
+                    { color: '#f5f5f5' },
+                    { visibility: 'simplified' }
+                ]
+            },{
+                featureType: 'poi', // set the point of interest
+                elementType: 'geometry',
+                stylers: [
+                    { color: '#f5f5f5' },
+                    { lightness: 30 }
+                ]
+            },{
+                featureType: 'road', // set the road
+                elementType: 'geometry',
+                stylers: [
+                    { color: '#EF4E31' }
+                ]
+            },{
+                featureType: 'road.local', // set the local road
+                elementType: 'all',
+                stylers: [
+                    { color: '#778F90' },
+                    { visibility: 'off' }
+                ]
+            },{
+                elementType: 'labels',
+                stylers: [
+                    { visibility: 'on' },
+                    { visibility: 'simplified' }
+                ]
+            },{
+                featureType: 'road',
+                elementType: 'labels',
+                stylers: [
+                    { visibility: 'off' }
+                ]
+            }
+        ];
+
+        var mapType = new google.maps.StyledMapType(stylez, { name:"styled" });
+
+        map.mapTypes.set('styled', mapType);
+        map.setMapTypeId('styled');
+
+    }
+</script>
 
 </body>
 </html>
