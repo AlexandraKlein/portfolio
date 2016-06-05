@@ -68,7 +68,11 @@ li {
 a {
   font-family: $body-font;
   text-decoration: none;
-  color: $orange
+  color: $orange;
+
+  &:hover {
+    color: $slate-gray;
+  }
 }
 
 input:focus,

@@ -155,8 +155,8 @@ body.home .main {
     padding: 0; }
     @media (min-width: 768px) {
       body.home .main #intro p {
-        line-height: 2vw;
-        font-size: 1.4vw; } }
+        line-height: 2.5vw;
+        font-size: 2vw; } }
 
 @media (max-width: 767px) {
   body.home .content .img-container svg:first-of-type {
@@ -188,5 +188,5 @@ body.home .main {
     display: -ms-flexbox;
     display: flex; }
     body.home .content .text-container p {
-      line-height: 2vw;
-      font-size: 1.4vw; } }
+      line-height: 2.5vw;
+      font-size: 2vw; } }
