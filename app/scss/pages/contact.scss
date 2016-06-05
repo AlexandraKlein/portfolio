@@ -54,6 +54,10 @@ body.contact {
         svg {
           width: 4vw;
           fill: $off-black;
+
+          @include mobile {
+            width: 35px;
+          }
         }
 
         &:hover {
@@ -75,6 +79,8 @@ body.contact {
 
       p {
         text-align: center;
+        margin-left: 0;
+        margin-right: 0;
       }
     }
   }

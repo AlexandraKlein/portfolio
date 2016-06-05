@@ -11,7 +11,7 @@ body.about {
       @extend .flex-both-align;
 
       @include mobile {
-        display: block;
+        display: block !important;
 
         svg {
           display: block;
@@ -26,7 +26,7 @@ body.about {
       margin-left: 2vw;
 
       @include mobile {
-        width: 12.7em;
+        width: 9.7em;
         margin: 20px auto;
       }
 
@@ -51,6 +51,10 @@ body.about {
       svg {
         width: 4vw;
         fill: $off-black;
+
+        @include mobile {
+          width: 35px;
+        }
       }
 
       &:hover {

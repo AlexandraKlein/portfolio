@@ -703,7 +703,7 @@ body.about #intro {
   margin: 10vw auto 0; }
   @media (max-width: 767px) {
     body.about #intro .head-wrap {
-      display: block; }
+      display: block !important; }
       body.about #intro .head-wrap svg {
         display: block;
         margin: auto; } }
@@ -713,7 +713,7 @@ body.about #intro {
     margin-left: 2vw; }
     @media (max-width: 767px) {
       body.about #intro .textWrap {
-        width: 12.7em;
+        width: 9.7em;
         margin: 20px auto; } }
     body.about #intro .textWrap h1 {
       color: #F5F5F5;
@@ -728,6 +728,9 @@ body.about .links a {
   body.about .links a svg {
     width: 4vw;
     fill: #171d22; }
+    @media (max-width: 767px) {
+      body.about .links a svg {
+        width: 35px; } }
   body.about .links a:hover svg {
     fill: #EF4E31; }
 
@@ -846,7 +849,7 @@ body.projects {
     margin: 10vw auto 0; }
     @media (max-width: 767px) {
       body.projects #intro .head-wrap {
-        display: block; }
+        display: block !important; }
         body.projects #intro .head-wrap svg {
           display: block;
           margin: auto; } }
@@ -856,14 +859,14 @@ body.projects {
       margin-left: 2vw; }
       @media (max-width: 767px) {
         body.projects #intro .textWrap {
-          width: 12.7em;
+          width: 10.7em;
           margin: 20px auto; } }
       body.projects #intro .textWrap h1 {
         color: #F5F5F5;
         padding-top: 1vw; }
         @media (max-width: 767px) {
           body.projects #intro .textWrap h1 {
-            font-size: 3.6em; } }
+            font-size: 3em; } }
   body.projects .projects-wrap {
     margin: 10vw auto 0;
     width: 100vw;
@@ -1237,6 +1240,9 @@ body.contact #intro {
     body.contact #intro .links a svg {
       width: 4vw;
       fill: #171d22; }
+      @media (max-width: 767px) {
+        body.contact #intro .links a svg {
+          width: 35px; } }
     body.contact #intro .links a:hover svg {
       fill: #EF4E31; }
 
@@ -1246,7 +1252,9 @@ body.contact .contact-me {
     body.contact .contact-me {
       display: block; }
       body.contact .contact-me p {
-        text-align: center; } }
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0; } }
 
 @media (min-width: 768px) {
   body.contact div#map_canvas {

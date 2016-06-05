@@ -64,7 +64,7 @@ body.about #intro {
   margin: 10vw auto 0; }
   @media (max-width: 767px) {
     body.about #intro .head-wrap {
-      display: block; }
+      display: block !important; }
       body.about #intro .head-wrap svg {
         display: block;
         margin: auto; } }
@@ -74,7 +74,7 @@ body.about #intro {
     margin-left: 2vw; }
     @media (max-width: 767px) {
       body.about #intro .textWrap {
-        width: 12.7em;
+        width: 9.7em;
         margin: 20px auto; } }
     body.about #intro .textWrap h1 {
       color: #F5F5F5;
@@ -89,6 +89,9 @@ body.about .links a {
   body.about .links a svg {
     width: 4vw;
     fill: #171d22; }
+    @media (max-width: 767px) {
+      body.about .links a svg {
+        width: 35px; } }
   body.about .links a:hover svg {
     fill: #EF4E31; }
 

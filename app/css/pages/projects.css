@@ -66,7 +66,7 @@ body.projects {
     margin: 10vw auto 0; }
     @media (max-width: 767px) {
       body.projects #intro .head-wrap {
-        display: block; }
+        display: block !important; }
         body.projects #intro .head-wrap svg {
           display: block;
           margin: auto; } }
@@ -76,14 +76,14 @@ body.projects {
       margin-left: 2vw; }
       @media (max-width: 767px) {
         body.projects #intro .textWrap {
-          width: 12.7em;
+          width: 10.7em;
           margin: 20px auto; } }
       body.projects #intro .textWrap h1 {
         color: #F5F5F5;
         padding-top: 1vw; }
         @media (max-width: 767px) {
           body.projects #intro .textWrap h1 {
-            font-size: 3.6em; } }
+            font-size: 3em; } }
   body.projects .projects-wrap {
     margin: 10vw auto 0;
     width: 100vw;

@@ -16,7 +16,7 @@ body.projects {
       @extend .flex-both-align;
 
       @include mobile {
-        display: block;
+        display: block !important;
 
         svg {
           display: block;
@@ -31,7 +31,7 @@ body.projects {
       margin-left: 2vw;
 
       @include mobile {
-        width: 12.7em;
+        width: 10.7em;
         margin: 20px auto;
       }
 
@@ -40,7 +40,7 @@ body.projects {
         padding-top: 1vw;
 
         @include mobile {
-          font-size: 3.6em;
+          font-size: 3em;
         }
       }
     }
