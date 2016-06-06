@@ -5,6 +5,7 @@
 body {
   background: $bg-color;
   border: 1.5rem solid $white;
+  overflow-x: hidden;
 }
 
 h1,
@@ -119,7 +120,7 @@ body:not(.home) {
 
 div#map_canvas {
   width: auto;
-  height: 500px;
+  height: 250px;
 
   @include tablet {
     height: 20vw;

@@ -350,7 +350,8 @@ body {
 
 body {
   background: #F5F5F5;
-  border: 1.5rem solid #fff; }
+  border: 1.5rem solid #fff;
+  overflow-x: hidden; }
 
 h1,
 h2 {
@@ -448,7 +449,7 @@ body:not(.home) #logoAnchor svg {
 
 div#map_canvas {
   width: auto;
-  height: 500px; }
+  height: 250px; }
   @media (min-width: 768px) {
     div#map_canvas {
       height: 20vw; } }
