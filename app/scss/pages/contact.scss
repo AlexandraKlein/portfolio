@@ -76,11 +76,16 @@ body.contact {
 
     @include mobile {
       display: block;
+    }
 
-      p {
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0;
+    p {
+      text-align: center;
+      margin-left: 0;
+      margin-right: 0;
+
+      @include tablet {
+        line-height: 2.5vw;
+        font-size: 2vw;
       }
     }
   }

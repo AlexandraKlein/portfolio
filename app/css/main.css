@@ -1253,11 +1253,15 @@ body.contact .contact-me {
   margin: 40px 0 20px; }
   @media (max-width: 767px) {
     body.contact .contact-me {
-      display: block; }
+      display: block; } }
+  body.contact .contact-me p {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0; }
+    @media (min-width: 768px) {
       body.contact .contact-me p {
-        text-align: center;
-        margin-left: 0;
-        margin-right: 0; } }
+        line-height: 2.5vw;
+        font-size: 2vw; } }
 
 @media (min-width: 768px) {
   body.contact div#map_canvas {
