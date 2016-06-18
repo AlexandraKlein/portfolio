@@ -59,6 +59,13 @@
   .mobile-hide {
     display: none; } }
 
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 1.5vw 0 1.5vw 1.5vw;
+  border-color: transparent transparent transparent #171d22; }
+
 body.home .main {
   text-align: center;
   border-bottom: 1.5rem solid #fff; }

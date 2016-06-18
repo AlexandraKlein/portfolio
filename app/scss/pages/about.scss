@@ -42,7 +42,18 @@ body.about {
     }
   }
 
-  .links {
+  .resume {
+    margin: 2vw;
+    a {
+      padding: 0 !important;
+    }
+
+    .triangle {
+      margin: 1vw 2vw;
+    }
+  }
+
+  .links, .resume {
     @extend .flex-both-align;
 
     a {

@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Khand:700);
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800italic);
-.flex-both-align, body.about #intro .head-wrap, body.about .links {
+.flex-both-align, body.about #intro .head-wrap, body.about .links, body.about .resume {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -59,6 +59,13 @@
   .mobile-hide {
     display: none; } }
 
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 1.5vw 0 1.5vw 1.5vw;
+  border-color: transparent transparent transparent #171d22; }
+
 body.about #intro {
   width: 80vw;
   margin: 10vw auto 0; }
@@ -84,15 +91,22 @@ body.about #intro {
         body.about #intro .textWrap h1 {
           font-size: 3.6em; } }
 
-body.about .links a {
+body.about .resume {
+  margin: 2vw; }
+  body.about .resume a {
+    padding: 0 !important; }
+  body.about .resume .triangle {
+    margin: 1vw 2vw; }
+
+body.about .links a, body.about .resume a {
   padding: 2vw; }
-  body.about .links a svg {
+  body.about .links a svg, body.about .resume a svg {
     width: 4vw;
     fill: #171d22; }
     @media (max-width: 767px) {
-      body.about .links a svg {
+      body.about .links a svg, body.about .resume a svg {
         width: 35px; } }
-  body.about .links a:hover svg {
+  body.about .links a:hover svg, body.about .resume a:hover svg {
     fill: #EF4E31; }
 
 body.about .images-grid {
