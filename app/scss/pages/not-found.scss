@@ -16,6 +16,7 @@ body.not-found {
         margin: 5vw auto 0;
 
         .head-wrap {
+            position: relative;
             @extend .flex-both-align;
 
             @include mobile {
@@ -35,7 +36,7 @@ body.not-found {
             position: relative;
 
             @include mobile {
-                margin: 10vw auto;
+                margin: 10vw auto .5vw;
             }
 
             h1 {
@@ -101,6 +102,21 @@ body.not-found {
                     opacity:0;
                     transform:translate3d(-50%, 3.5vw, 0);
                 }
+            }
+        }
+        
+        h2 {
+            position: absolute;
+            text-transform: none;
+            top: 0;
+            right: 9.6vw;
+            font-size: 5.8vw;
+            z-index: -1;
+
+            @include mobile {
+                position: relative;
+                right: 0;
+                text-align: center;
             }
         }
     }

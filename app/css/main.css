@@ -1396,12 +1396,14 @@ body.not-found {
   body.not-found #intro {
     width: 80vw;
     margin: 5vw auto 0; }
-    @media (max-width: 767px) {
-      body.not-found #intro .head-wrap {
-        display: block !important; }
-        body.not-found #intro .head-wrap svg {
-          display: block;
-          margin: auto; } }
+    body.not-found #intro .head-wrap {
+      position: relative; }
+      @media (max-width: 767px) {
+        body.not-found #intro .head-wrap {
+          display: block !important; }
+          body.not-found #intro .head-wrap svg {
+            display: block;
+            margin: auto; } }
     body.not-found #intro .textWrap {
       background-color: #171d22;
       width: 33vw;
@@ -1409,7 +1411,7 @@ body.not-found {
       position: relative; }
       @media (max-width: 767px) {
         body.not-found #intro .textWrap {
-          margin: 10vw auto; } }
+          margin: 10vw auto .5vw; } }
       body.not-found #intro .textWrap h1 {
         color: #F5F5F5;
         padding-top: 1vw;
@@ -1502,6 +1504,18 @@ body.not-found {
     opacity: 0;
     -webkit-transform: translate3d(-50%, 3.5vw, 0);
             transform: translate3d(-50%, 3.5vw, 0); } }
+    body.not-found #intro h2 {
+      position: absolute;
+      text-transform: none;
+      top: 0;
+      right: 9.6vw;
+      font-size: 5.8vw;
+      z-index: -1; }
+      @media (max-width: 767px) {
+        body.not-found #intro h2 {
+          position: relative;
+          right: 0;
+          text-align: center; } }
   body.not-found .home {
     width: 27vw;
     text-align: center;
