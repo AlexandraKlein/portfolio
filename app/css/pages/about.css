@@ -118,8 +118,8 @@ body.about .images-grid {
     @media (min-width: 768px) {
       body.about .images-grid div,
       body.about .images-grid div > figure {
-        width: calc(50vw - 1.5em);
-        height: calc(50vw - 1.5em); } }
+        width: calc(50vw - 2em);
+        height: calc(50vw - 2em); } }
   body.about .images-grid .ali-vr {
     background: url("../../images/about/ali-vr.jpg") center center no-repeat;
     background-size: cover; }
