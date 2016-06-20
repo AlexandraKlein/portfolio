@@ -35,70 +35,71 @@ body.not-found {
             position: relative;
 
             @include mobile {
-                width: 9.7em;
-                margin: 20px auto;
+                margin: 10vw auto;
             }
 
             h1 {
-                color: $white;
+                color: $bg-color;
                 padding-top: 1vw;
                 text-align: center;
                 height: 12vw;
-                transform: translate(6vw, -3vw);
 
                 @include mobile {
-                    padding-top: 0.15em;
-                    font-size: 3.6em;
-                    transform: translate(36px, -35px);
+                    padding-top: .5vw;
                 }
 
                 span {
                     animation: bounce 2.5s infinite forwards;
                     position: absolute;
+                    bottom: -1.2vw;
 
                     &:first-of-type {
-                        left: 0;
+                        left: 8vw;
                     }
 
                     &:nth-of-type(2) {
-                        left: 10vw;
+                        left: 16vw;
                         animation-delay: .5s;
                     }
 
                     &:nth-of-type(3) {
-                        left: 20vw;
+                        left: 24vw;
                         animation-delay: 1s;
+                    }
+
+                    @include mobile {
+                        bottom: .5vw;
                     }
                 }
             }
 
             @keyframes bounce {
                 8% {
-                    transform:translate3d(-50%,-45px,0) scaleY(0.2);
+                    transform: translate3d(-50%, -2vw, 0) scaleY(0.2);
                     transform-origin:left bottom 0;
                 }
                 25% {
-                    transform:translate3d(-50%,-110px,0) scaleY(1.4);
+                    transform:translate3d(-50%, -3.5vw, 0) scaleY(1.4);
                 }
                 40% {
-                    transform:translate3d(-50%,30px,0) scaleY(0.5);
+                    transform:translate3d(-50%, 1.5vw, 0) scaleY(0.5);
                     transform-origin:left bottom 0;
                 }
                 50% {
-                    transform:translate3d(-50%,30px,0) scaleY(1.2);
+                    transform:translate3d(-50%, 1vw, 0) scaleY(1.2);
                     transform-origin:left bottom 0;
                 }
                 60% {
-                    transform:translate3d(-50%,30px,0) scaleY(1);
+                    transform:translate3d(-50%, 1vw, 0) scaleY(1);
                     transform-origin:left bottom 0;
                 }
                 80% {
                     opacity:1;
-                    transform:translate3d(-50%,30px,0);
+                    transform:translate3d(-50%, 1vw, 0);
                 }
                 100% {
                     opacity:0;
-                    transform:translate3d(-50%,100px,0);
+                    transform:translate3d(-50%, 3.5vw, 0);
                 }
             }
         }
@@ -106,18 +107,28 @@ body.not-found {
 
     .home {
         width: 27vw;
-        display: block;
         text-align: center;
         margin: 5vw auto 0;
+        @extend .flex-both-align;
 
         @include mobile {
             margin: 100px auto 0;
             width: 100%;
         }
 
+        svg {
+            width: 10vw;
+            fill: $orange;
+            pointer-events: none;
+        }
+
         a {
+            cursor: pointer;
             &:hover {
                 color: $off-black;
+                svg {
+                    fill: $off-black;
+                }
             }
         }
     }
