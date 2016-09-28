@@ -52,6 +52,10 @@ body.projects {
     overflow-y: auto;
     @extend .flex-row;
 
+    @include tablet {
+      max-width: 1080px;
+    }
+
     a {
       width: calc(100vw - 3em);
       height: calc(100vw - 3em);
@@ -61,6 +65,10 @@ body.projects {
       @include tablet {
         width: calc(50vw - 1.5rem);
         height: calc(50vw - 1.5rem);
+        max-width: calc(564px - 1.5rem);
+        max-height: calc(564px - 1.5rem);
+        overflow: hidden;
+
       }
 
       .project {
@@ -68,7 +76,7 @@ body.projects {
         width: 100%;
         height: 100%;
 
-        $project-tiles-names: web-deutsch web-vw web-vw-carnet web-cmab web-target-btc web-target-btc-awards web-fosterfarms web-vw-sharks-awards web-vf-tbtt;
+        $project-tiles-names: web-deutsch web-vw web-vw-carnet web-cmab web-target-btc web-target-btc-awards web-fosterfarms web-vw-sharks-awards web-vf-tbtt web-tacobell;
         @each $project-tile-name in $project-tiles-names {
 
           &.#{$project-tile-name} {
@@ -95,6 +103,8 @@ body.projects {
         @include tablet {
           width: 40vw;
           height: 40vw;
+          max-width: 400px;
+          max-height: 400px;
           opacity: 0.75;
         }
       }
@@ -296,7 +306,7 @@ body.projects {
 
             @include tablet {
               margin-top: .5vw;
-              width: 46.5vw;
+              width: 25vw;
             }
           }
         }
@@ -341,13 +351,13 @@ body.projects {
         }
       }
 
-      &.vw-sharks {
+      &.tacobell {
 
         .textWrap {
-          width: 14.5em;
+          width: 8.5em;
 
           @include tablet {
-            width: 31vw;
+            width: 18vw;
           }
         }
       }
@@ -439,7 +449,7 @@ body.projects {
         height: calc(33vw - 3em);
       }
 
-      $project-tiles-names: zillow-logo sevenup-logo tacobell-logo;
+      $project-tiles-names: zillow-logo sevenup-logo anthem-logo;
       @each $project-tile-name in $project-tiles-names {
 
         &.#{$project-tile-name} {
