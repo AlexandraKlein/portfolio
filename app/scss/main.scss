@@ -3,11 +3,11 @@
 @import "partials/typography";
 @import "partials/variables";
 @import "partials/reset";
+@import "partials/base";
 
 // Components
 @import "components/navigation";
 @import "components/homeScroll";
-@import "partials/base";
 
 // Pages
 @import "pages/home";

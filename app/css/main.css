@@ -51,6 +51,190 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.flex-both-align, body.about #intro .head-wrap, body.about .links, body.about .resume, body.projects #intro .head-wrap, body.projects .client-wrap, body.contact #intro .head-wrap, body.contact #intro .links, body.contact .contact-me, body.not-found #intro .head-wrap, body.not-found .home {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.flex-row, body.about .images-grid, body.projects .projects-wrap {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.align-both, body.projects .projects-wrap a .logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.divider {
+  display: block;
+  margin: 20px auto 0;
+  width: calc(100% - 20px);
+  height: 50px;
+  background: #EF4E31;
+  border-bottom: 2px solid #F5F5F5;
+  border-top: 2px solid #F5F5F5;
+  box-shadow: 0 0 0 10px #EF4E31; }
+
+@media (max-width: 767px) {
+  .mobile-hide {
+    display: none; } }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 1.5vw 0 1.5vw 1.5vw;
+  border-color: transparent transparent transparent #171d22; }
+
+body {
+  background: #F5F5F5;
+  border: 1.5rem solid #fff;
+  overflow-x: hidden; }
+
+h1,
+h2 {
+  color: #171d22;
+  font-family: "Khand", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+h3,
+h4 {
+  font-family: "Pacifico", cursive; }
+
+h1 {
+  font-size: 2.625rem; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 15vw; } }
+
+h2 {
+  font-size: 1.875rem; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 7.4vw; } }
+
+h3 {
+  font-size: 2.125rem; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 6vw; } }
+
+h4 {
+  font-size: 1.75rem; }
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 4vw; } }
+
+p,
+li {
+  color: #515052;
+  font-family: "Open Sans", sans-serif;
+  margin: 30px 30px 10px;
+  font-size: 1.125rem; }
+  @media (min-width: 768px) {
+    p,
+    li {
+      font-size: 1.25rem; } }
+
+a {
+  font-family: "Open Sans", sans-serif;
+  text-decoration: none;
+  color: #EF4E31; }
+  a:hover {
+    color: #515052; }
+
+input:focus,
+a:focus,
+button:focus {
+  outline: none;
+  border: none; }
+
+.textWrap {
+  background-color: rgba(255, 255, 255, 0.8); }
+
+body:not(.home) #logoAnchor svg {
+  width: 25vw; }
+  body:not(.home) #logoAnchor svg .logo {
+    fill: #EF4E31;
+    -webkit-animation-name: fillUp;
+            animation-name: fillUp;
+    -webkit-animation-duration: 5s;
+            animation-duration: 5s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out; }
+
+@-webkit-keyframes fillUp {
+  0% {
+    fill: transparent; }
+  100% {
+    fill: #EF4E31; } }
+
+@-webkit-keyframes fill {
+  0% {
+    fill: transparent; }
+  100% {
+    fill: #EF4E31; } }
+
+@keyframes fill {
+  0% {
+    fill: transparent; }
+  100% {
+    fill: #EF4E31; } }
+
+.divider.map {
+  border-bottom-width: 0; }
+
+div#map_canvas {
+  width: auto;
+  height: 250px; }
+  @media (min-width: 768px) {
+    div#map_canvas {
+      height: 20vw; } }
+  div#map_canvas .gm-style div:nth-child(2),
+  div#map_canvas .gm-style div:nth-child(6) {
+    z-index: -1 !important; }
+  div#map_canvas .gm-style .gmnoprint {
+    z-index: -1 !important; }
+
+@media (max-width: 767px) {
+  .desktop-only {
+    display: none; } }
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none; } }
+
 body {
   position: static;
   top: 0;
@@ -292,182 +476,6 @@ body {
     -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center; } }
-
-.flex-both-align, body.about #intro .head-wrap, body.about .links, body.about .resume, body.projects #intro .head-wrap, body.projects .client-wrap, body.contact #intro .head-wrap, body.contact #intro .links, body.contact .contact-me, body.not-found #intro .head-wrap, body.not-found .home {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
-
-.flex-row, body.about .images-grid, body.projects .projects-wrap {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: row;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-justify-content: flex-start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-align-content: center;
-      -ms-flex-line-pack: center;
-          align-content: center;
-  -webkit-align-items: flex-start;
-      -ms-flex-align: start;
-          align-items: flex-start; }
-
-.vertical-align {
-  position: relative;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%); }
-
-.align-both, body.projects .projects-wrap a .logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%); }
-
-.divider {
-  display: block;
-  margin: 20px auto 0;
-  width: calc(100% - 20px);
-  height: 50px;
-  background: #EF4E31;
-  border-bottom: 2px solid #F5F5F5;
-  border-top: 2px solid #F5F5F5;
-  box-shadow: 0 0 0 10px #EF4E31; }
-
-@media (max-width: 767px) {
-  .mobile-hide {
-    display: none; } }
-
-.triangle {
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 1.5vw 0 1.5vw 1.5vw;
-  border-color: transparent transparent transparent #171d22; }
-
-body {
-  background: #F5F5F5;
-  border: 1.5rem solid #fff;
-  overflow-x: hidden; }
-
-h1,
-h2 {
-  color: #171d22;
-  font-family: "Khand", sans-serif;
-  text-transform: uppercase;
-  font-weight: bold; }
-
-h3,
-h4 {
-  font-family: "Pacifico", cursive; }
-
-h1 {
-  font-size: 2.625rem; }
-  @media (min-width: 768px) {
-    h1 {
-      font-size: 15vw; } }
-
-h2 {
-  font-size: 1.875rem; }
-  @media (min-width: 768px) {
-    h2 {
-      font-size: 7.4vw; } }
-
-h3 {
-  font-size: 2.125rem; }
-  @media (min-width: 768px) {
-    h3 {
-      font-size: 6vw; } }
-
-h4 {
-  font-size: 1.75rem; }
-  @media (min-width: 768px) {
-    h4 {
-      font-size: 4vw; } }
-
-p,
-li {
-  color: #515052;
-  font-family: "Open Sans", sans-serif;
-  margin: 30px 30px 10px;
-  font-size: 1.125rem; }
-  @media (min-width: 768px) {
-    p,
-    li {
-      font-size: 1.25rem; } }
-
-a {
-  font-family: "Open Sans", sans-serif;
-  text-decoration: none;
-  color: #EF4E31; }
-  a:hover {
-    color: #515052; }
-
-input:focus,
-a:focus,
-button:focus {
-  outline: none;
-  border: none; }
-
-.textWrap {
-  background-color: rgba(255, 255, 255, 0.8); }
-
-body:not(.home) #logoAnchor svg {
-  width: 25vw; }
-  body:not(.home) #logoAnchor svg .logo {
-    fill: #EF4E31;
-    -webkit-animation-name: fillUp;
-            animation-name: fillUp;
-    -webkit-animation-duration: 5s;
-            animation-duration: 5s;
-    -webkit-animation-timing-function: ease-in-out;
-            animation-timing-function: ease-in-out; }
-
-@-webkit-keyframes fillUp {
-  0% {
-    fill: transparent; }
-  100% {
-    fill: #EF4E31; } }
-
-@-webkit-keyframes fill {
-  0% {
-    fill: transparent; }
-  100% {
-    fill: #EF4E31; } }
-
-@keyframes fill {
-  0% {
-    fill: transparent; }
-  100% {
-    fill: #EF4E31; } }
-
-.divider.map {
-  border-bottom-width: 0; }
-
-div#map_canvas {
-  width: auto;
-  height: 250px; }
-  @media (min-width: 768px) {
-    div#map_canvas {
-      height: 20vw; } }
-  div#map_canvas .gm-style div:nth-child(2),
-  div#map_canvas .gm-style div:nth-child(6) {
-    z-index: -1 !important; }
-  div#map_canvas .gm-style .gmnoprint {
-    z-index: -1 !important; }
 
 .flex-both-align, body.about #intro .head-wrap, body.about .links, body.about .resume, body.projects #intro .head-wrap, body.projects .client-wrap, body.contact #intro .head-wrap, body.contact #intro .links, body.contact .contact-me, body.not-found #intro .head-wrap, body.not-found .home {
   display: -webkit-flex;
@@ -914,6 +922,12 @@ body.projects {
     @media (min-width: 768px) {
       body.projects .projects-wrap {
         max-width: 1080px; } }
+    @media (max-width: 767px) {
+      body.projects .projects-wrap {
+        background-color: #fff; } }
+    @media (max-width: 767px) {
+      body.projects .projects-wrap > div {
+        margin-bottom: 1.5em; } }
     body.projects .projects-wrap a {
       width: calc(100vw - 3em);
       height: calc(100vw - 3em);
@@ -950,6 +964,8 @@ body.projects {
           background: url("../../images/projects/web-vf-tbtt.jpg") center center no-repeat; }
         body.projects .projects-wrap a .project.web-tacobell {
           background: url("../../images/projects/web-tacobell.jpg") center center no-repeat; }
+        body.projects .projects-wrap a .project.web-anthem {
+          background: url("../../images/projects/web-anthem.jpg") center center no-repeat; }
       body.projects .projects-wrap a .logo {
         width: 50vw;
         height: 50vw;
@@ -973,6 +989,8 @@ body.projects {
           background: url("../../images/logos/vanityfair-logo.svg") center center no-repeat; }
         body.projects .projects-wrap a .logo.zillow-logo {
           background: url("../../images/logos/zillow-logo.svg") center center no-repeat; }
+        body.projects .projects-wrap a .logo.anthem-logo {
+          background: url("../../images/logos/anthem-logo.svg") center center no-repeat; }
         @media (min-width: 768px) {
           body.projects .projects-wrap a .logo {
             width: 40vw;
@@ -990,6 +1008,10 @@ body.projects {
         left: 0;
         background-color: rgba(255, 255, 255, 0.8);
         transition: all .25s; }
+        @media (max-width: 767px) {
+          body.projects .projects-wrap a .hover {
+            width: calc(100vw - 3em);
+            height: calc(100vw - 3em); } }
         body.projects .projects-wrap a .hover:hover {
           background-color: transparent; }
     body.projects .projects-wrap .project-overlay {
@@ -1029,9 +1051,6 @@ body.projects {
                       transform: rotate(135deg);
               top: 12px; }
             body.projects .projects-wrap .project-overlay.open .close span:nth-child(2) {
-              opacity: 0;
-              background-color: #515052; }
-            body.projects .projects-wrap .project-overlay.open .close span:nth-child(3) {
               -webkit-transform: rotate(-310deg);
                       transform: rotate(-310deg);
               top: 12px; }
@@ -1106,6 +1125,11 @@ body.projects {
         @media (min-width: 768px) {
           body.projects .projects-wrap .project-overlay.deutsch .textWrap {
             width: 36.5vw; } }
+      body.projects .projects-wrap .project-overlay.anthem .textWrap {
+        width: 17em; }
+        @media (min-width: 768px) {
+          body.projects .projects-wrap .project-overlay.anthem .textWrap {
+            width: 36vw; } }
       body.projects .projects-wrap .project-overlay.target .textWrap:first-of-type {
         width: 9.5em; }
         @media (min-width: 768px) {
@@ -1156,6 +1180,11 @@ body.projects {
             font-size: 3em; } }
         body.projects .projects-wrap .project-overlay.vf .textWrap:nth-of-type(2) {
           margin-top: .25em; }
+      body.projects .projects-wrap .project-overlay.vw-sharks .textWrap {
+        width: 14.5em; }
+        @media (min-width: 768px) {
+          body.projects .projects-wrap .project-overlay.vw-sharks .textWrap {
+            width: 31vw; } }
   body.projects .textWrap {
     background-color: #171d22;
     width: 86vw; }
@@ -1197,8 +1226,8 @@ body.projects {
       background: url("../../images/logos/zillow-logo.svg") center center no-repeat; }
     body.projects .client-wrap .client.sevenup-logo {
       background: url("../../images/logos/sevenup-logo.svg") center center no-repeat; }
-    body.projects .client-wrap .client.anthem-logo {
-      background: url("../../images/logos/anthem-logo.svg") center center no-repeat; }
+    body.projects .client-wrap .client.answerfinancial-logo {
+      background: url("../../images/logos/answerfinancial-logo.svg") center center no-repeat; }
 
 .flex-both-align, body.about #intro .head-wrap, body.about .links, body.about .resume, body.projects #intro .head-wrap, body.projects .client-wrap, body.contact #intro .head-wrap, body.contact #intro .links, body.contact .contact-me, body.not-found #intro .head-wrap, body.not-found .home {
   display: -webkit-flex;
@@ -1310,6 +1339,7 @@ body.contact .contact-me {
       display: block; } }
   body.contact .contact-me p {
     text-align: center;
+    padding: 0;
     margin-left: 0;
     margin-right: 0; }
     @media (min-width: 768px) {
