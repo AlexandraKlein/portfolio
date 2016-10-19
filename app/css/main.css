@@ -1103,7 +1103,9 @@ body.projects {
       body.projects .projects-wrap .project-overlay a.to-website {
         margin: auto;
         width: auto;
-        height: auto; }
+        height: auto;
+        max-width: none;
+        overflow: visible; }
       body.projects .projects-wrap .project-overlay a.launch {
         width: 175px;
         height: auto;
