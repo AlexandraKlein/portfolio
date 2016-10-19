@@ -79,16 +79,15 @@ body.about {
 
   .images-grid {
     margin-top: 5vw;
+    width: 100%;
     @extend .flex-row;
 
-    div,
-    div > figure,{
-
-      width: calc(100vw - 1.5em);
+    div {
+      width: 100%;
       height: calc(100vw - 1.5em);
 
       @include tablet {
-        width: calc(50vw - 2em);
+        width: 50%;
         height: calc(50vw - 2em);
       }
     }

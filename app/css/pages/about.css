@@ -110,15 +110,14 @@ body.about .links a, body.about .resume a {
     fill: #EF4E31; }
 
 body.about .images-grid {
-  margin-top: 5vw; }
-  body.about .images-grid div,
-  body.about .images-grid div > figure {
-    width: calc(100vw - 1.5em);
+  margin-top: 5vw;
+  width: 100%; }
+  body.about .images-grid div {
+    width: 100%;
     height: calc(100vw - 1.5em); }
     @media (min-width: 768px) {
-      body.about .images-grid div,
-      body.about .images-grid div > figure {
-        width: calc(50vw - 2em);
+      body.about .images-grid div {
+        width: 50%;
         height: calc(50vw - 2em); } }
   body.about .images-grid .ali-vr {
     background: url("../../images/about/ali-vr.jpg") center center no-repeat;
