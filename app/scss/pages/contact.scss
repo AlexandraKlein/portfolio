@@ -73,6 +73,7 @@ body.contact {
   .contact-me {
     margin: 40px 0 20px;
     @extend .flex-both-align;
+    justify-content: space-around !important;
 
     @include mobile {
       display: block;

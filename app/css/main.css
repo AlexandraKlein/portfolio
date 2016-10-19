@@ -1335,7 +1335,10 @@ body.contact #intro {
       fill: #EF4E31; }
 
 body.contact .contact-me {
-  margin: 40px 0 20px; }
+  margin: 40px 0 20px;
+  -webkit-justify-content: space-around !important;
+      -ms-flex-pack: distribute !important;
+          justify-content: space-around !important; }
   @media (max-width: 767px) {
     body.contact .contact-me {
       display: block; } }
