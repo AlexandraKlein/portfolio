@@ -18,18 +18,33 @@ $(function() {
         var imageIndex = Math.round(currentScrollPosition / scrollResolution);
 
         if (imageIndex >= pictureCount) {
-            imageIndex = pictureCount - 1; // Select last image
+            imageIndex = pictureCount - 1;
         }
 
         picture.hide();
         picture.eq(imageIndex).show();
     }
 
+    //function findScrollPosition() {
+    //    var fixedPositionY = $('.divider.map'),
+    //        hT = fixedPositionY.offset().top,
+    //        hH = fixedPositionY.outerHeight(),
+    //        wH = $(window).height(),
+    //        wS = $(this).scrollTop();
+    //
+    //    if (wS > (hT + hH - wH)){
+    //        picture.css({
+    //            bottom: 500
+    //        });
+    //    }
+    //}
+
     animateSequence();
+    animateScroll();
 
     $(window).bind('scroll', function() {
         animateScroll();
+        findScrollPosition();
     });
-
 
 });
