@@ -19,31 +19,23 @@ body.home {
       justify-content: center;
     }
 
-    .bg-video {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      min-width: 100%;
-      min-height: 100%;
-      width: auto;
-      height: auto;
-      transform: translateX(-50%) translateY(-50%);
-      z-index: -1;
+    .sequence {
+      position: relative;
 
-      @include mobile {
-        display: none !important;
-      }
-    }
-    
-    img.sequence {
-      top: 0;
-      left: 0;
-      position: fixed;
-      width: 100%;
-      z-index: -2;
+      img {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        transform: translateX(-50%) translateY(-50%);
+        z-index: -2;
 
-      @include mobile {
-        display: none;
+        @include mobile {
+          display: none !important;
+        }
       }
     }
 

@@ -83,29 +83,22 @@ body.home .main {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center; } }
-  body.home .main .bg-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    -webkit-transform: translateX(-50%) translateY(-50%);
-            transform: translateX(-50%) translateY(-50%);
-    z-index: -1; }
-    @media (max-width: 767px) {
-      body.home .main .bg-video {
-        display: none !important; } }
-  body.home .main img.sequence {
-    top: 0;
-    left: 0;
-    position: fixed;
-    width: 100%;
-    z-index: -2; }
-    @media (max-width: 767px) {
-      body.home .main img.sequence {
-        display: none; } }
+  body.home .main .sequence {
+    position: relative; }
+    body.home .main .sequence img {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      -webkit-transform: translateX(-50%) translateY(-50%);
+              transform: translateX(-50%) translateY(-50%);
+      z-index: -2; }
+      @media (max-width: 767px) {
+        body.home .main .sequence img {
+          display: none !important; } }
   body.home .main #logoAnchor {
     width: 40vw;
     display: block;

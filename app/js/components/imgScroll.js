@@ -1,9 +1,17 @@
 $(function() {
-    var picture = $('img.sequence');
+    var picture = $('.sequence img');
     var pictureCount = picture.length;
     var scrollResolution = 75;
 
-    animateScroll();
+    function animateSequence() {
+        $('.sequence img:gt(0)').hide();
+
+        setInterval(function() {
+            $('.sequence :first-child').hide()
+               .next('img').show()
+               .end().appendTo('.sequence');
+        }, 100);
+    }
 
     function animateScroll() {
         var currentScrollPosition = window.pageYOffset;
@@ -17,16 +25,11 @@ $(function() {
         picture.eq(imageIndex).show();
     }
 
+    animateSequence();
+
     $(window).bind('scroll', function() {
         animateScroll();
-
-
-        var height = $(window).scrollTop(),
-            video = $('.bg-video');
-        if (height < 50) {
-            video.fadeIn(250);
-        } else {
-            video.fadeOut(250);
-        }
     });
+
+
 });
