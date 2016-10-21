@@ -543,14 +543,13 @@ body {
   border-color: transparent transparent transparent #171d22; }
 
 body.home .main {
-  text-align: center;
-  border-bottom: 1.5rem solid #fff; }
+  text-align: center; }
   @media (max-width: 767px) {
     body.home .main {
       padding: 2em 0; } }
   @media (min-width: 768px) {
     body.home .main {
-      height: calc(100vh - 3rem);
+      height: 100vh;
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
@@ -571,6 +570,18 @@ body.home .main {
     -webkit-transform: translateX(-50%) translateY(-50%);
             transform: translateX(-50%) translateY(-50%);
     z-index: -1; }
+    @media (max-width: 767px) {
+      body.home .main .bg-video {
+        display: none !important; } }
+  body.home .main img.sequence {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: -2; }
+    @media (max-width: 767px) {
+      body.home .main img.sequence {
+        display: none; } }
   body.home .main #logoAnchor {
     width: 40vw;
     display: block;

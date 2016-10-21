@@ -1,5 +1,4 @@
-$( document ).ready(function() {
-
+$(function() {
     var close = $('.close'),
         project = $('a.project-target');
 

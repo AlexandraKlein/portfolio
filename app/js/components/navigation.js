@@ -1,4 +1,4 @@
-$( document ).ready(function() {
+$(function() {
     $('a.open-menu').click(function(e){
         var body = $('body'),
             menu = $('.menu'),
