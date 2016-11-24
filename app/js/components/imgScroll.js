@@ -25,11 +25,35 @@ $(function() {
         picture.eq(imageIndex).show();
     }
 
+    //function findScrollPosition() {
+    //    var fixedPositionY = $('.divider.map'),
+    //        hT = fixedPositionY.offset().top,
+    //        hH = fixedPositionY.outerHeight(),
+    //        wH = $(window).height(),
+    //        wS = $(this).scrollTop();
+    //
+    //    if (wS > (hT + hH - wH - 62)){
+    //        picture.css({
+    //            position: 'absolute',
+    //            top: 'inherit',
+    //            bottom: 500
+    //        });
+    //        console.log('I REACHED THAT POINT');
+    //    } else {
+    //        picture.css({
+    //            position: 'fixed',
+    //            top: '50%',
+    //            bottom: 'inherit'
+    //        })
+    //    }
+    //}
+
     animateSequence();
     animateScroll();
 
     $(window).bind('scroll', function() {
         animateScroll();
+        //findScrollPosition();
     });
 
 });
