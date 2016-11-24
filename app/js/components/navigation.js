@@ -26,8 +26,6 @@ $( document ).ready(function() {
             $progressBar = $('.progress .bar');
 
         $progressBar.width(progress + '%');
-
-        console.log(pageHeight, scrollTop, progress);
     }
 
     progress();
