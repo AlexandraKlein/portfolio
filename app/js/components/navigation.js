@@ -17,4 +17,24 @@ $( document ).ready(function() {
             body.scrollTop(scrollValue);
         }
     });
+
+
+    function progress() {
+        var pageHeight = $(document).height(),
+            scrollTop = $(window).scrollTop() + $(window).height(),
+            progress = (scrollTop / pageHeight) * 100,
+            $progressBar = $('.progress .bar');
+
+        $progressBar.width(progress + '%');
+
+        console.log(pageHeight, scrollTop, progress);
+    }
+
+    progress();
+
+    $(window).scroll(function() {
+        progress();
+    });
+
+
 });
