@@ -363,9 +363,12 @@ body {
   background: white;
   z-index: 1; }
   .progress .bar {
+    position: absolute;
+    left: 0;
     height: 100%;
-    width: 10%;
-    background: #EF4E31; }
+    width: 5%;
+    background: #EF4E31;
+    transition: width .1s ease-in-out; }
 
 .cbp-so-scroller {
   margin-top: 3em; }

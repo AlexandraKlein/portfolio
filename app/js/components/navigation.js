@@ -1,4 +1,7 @@
 $(function() {
+
+    //main hamburger nav
+
     $('a.open-menu').click(function(e){
         var body = $('body'),
             menu = $('.menu'),
@@ -18,17 +21,22 @@ $(function() {
         }
     });
 
+    //progress bar
 
     function progress() {
         var pageHeight = $(document).height(),
             scrollTop = $(window).scrollTop() + $(window).height(),
-            progress = (scrollTop / pageHeight) * 100,
+            progress = ((scrollTop / pageHeight) * 100),
             $progressBar = $('.progress .bar');
 
-        $progressBar.width(progress + '%');
+        if (progress > 20) {
+            $progressBar.width(progress + '%');
+        } else {
+            $progressBar.width(5 + '%');
+        }
+
     }
 
-    progress();
 
     $(window).scroll(function() {
         progress();
