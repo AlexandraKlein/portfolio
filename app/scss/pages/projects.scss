@@ -161,7 +161,8 @@ body.projects {
       &.open {
         top: 0;
         height: 100%;
-        overflow-y: auto;
+        overflow-y: scroll;
+        -webkit-overflow-scrolling: touch;
         transform: translateY(0);
         transition: all .5s;
         transition-timing-function: $transitionBounce;
