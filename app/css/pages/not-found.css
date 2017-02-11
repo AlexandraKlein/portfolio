@@ -2,37 +2,48 @@
 @import url(https://fonts.googleapis.com/css?family=Pacifico);
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800italic);
 .flex-both-align, body.not-found #intro .head-wrap, body.not-found .home {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-pack: center;
-      justify-content: center; }
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
 
 .flex-row {
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-align: start;
-      align-items: flex-start; }
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-align-content: center;
+      -ms-flex-line-pack: center;
+          align-content: center;
+  -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
 
 .vertical-align {
   position: relative;
   top: 50%;
-  transform: translateY(-50%); }
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
 
 .align-both {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
 
 .divider {
   display: block;
@@ -88,42 +99,89 @@ body.not-found {
           body.not-found #intro .textWrap h1 {
             padding-top: .5vw; } }
         body.not-found #intro .textWrap h1 span {
-          animation: bounce 2.5s infinite forwards;
+          -webkit-animation: bounce 2.5s infinite forwards;
+                  animation: bounce 2.5s infinite forwards;
           position: absolute;
           bottom: -1.2vw; }
           body.not-found #intro .textWrap h1 span:first-of-type {
             left: 8vw; }
           body.not-found #intro .textWrap h1 span:nth-of-type(2) {
             left: 16vw;
-            animation-delay: .5s; }
+            -webkit-animation-delay: .5s;
+                    animation-delay: .5s; }
           body.not-found #intro .textWrap h1 span:nth-of-type(3) {
             left: 24vw;
-            animation-delay: 1s; }
+            -webkit-animation-delay: 1s;
+                    animation-delay: 1s; }
           @media (max-width: 767px) {
             body.not-found #intro .textWrap h1 span {
               bottom: .5vw; } }
 
-@keyframes bounce {
+@-webkit-keyframes bounce {
   8% {
-    transform: translate3d(-50%, -2vw, 0) scaleY(0.2);
-    transform-origin: left bottom 0; }
+    -webkit-transform: translate3d(-50%, -2vw, 0) scaleY(0.2);
+            transform: translate3d(-50%, -2vw, 0) scaleY(0.2);
+    -webkit-transform-origin: left bottom 0;
+            transform-origin: left bottom 0; }
   25% {
-    transform: translate3d(-50%, -3.5vw, 0) scaleY(1.4); }
+    -webkit-transform: translate3d(-50%, -3.5vw, 0) scaleY(1.4);
+            transform: translate3d(-50%, -3.5vw, 0) scaleY(1.4); }
   40% {
-    transform: translate3d(-50%, 1.5vw, 0) scaleY(0.5);
-    transform-origin: left bottom 0; }
+    -webkit-transform: translate3d(-50%, 1.5vw, 0) scaleY(0.5);
+            transform: translate3d(-50%, 1.5vw, 0) scaleY(0.5);
+    -webkit-transform-origin: left bottom 0;
+            transform-origin: left bottom 0; }
   50% {
-    transform: translate3d(-50%, 1vw, 0) scaleY(1.2);
-    transform-origin: left bottom 0; }
+    -webkit-transform: translate3d(-50%, 1vw, 0) scaleY(1.2);
+            transform: translate3d(-50%, 1vw, 0) scaleY(1.2);
+    -webkit-transform-origin: left bottom 0;
+            transform-origin: left bottom 0; }
   60% {
-    transform: translate3d(-50%, 1vw, 0) scaleY(1);
-    transform-origin: left bottom 0; }
+    -webkit-transform: translate3d(-50%, 1vw, 0) scaleY(1);
+            transform: translate3d(-50%, 1vw, 0) scaleY(1);
+    -webkit-transform-origin: left bottom 0;
+            transform-origin: left bottom 0; }
   80% {
     opacity: 1;
-    transform: translate3d(-50%, 1vw, 0); }
+    -webkit-transform: translate3d(-50%, 1vw, 0);
+            transform: translate3d(-50%, 1vw, 0); }
   100% {
     opacity: 0;
-    transform: translate3d(-50%, 3.5vw, 0); } }
+    -webkit-transform: translate3d(-50%, 3.5vw, 0);
+            transform: translate3d(-50%, 3.5vw, 0); } }
+
+@keyframes bounce {
+  8% {
+    -webkit-transform: translate3d(-50%, -2vw, 0) scaleY(0.2);
+            transform: translate3d(-50%, -2vw, 0) scaleY(0.2);
+    -webkit-transform-origin: left bottom 0;
+            transform-origin: left bottom 0; }
+  25% {
+    -webkit-transform: translate3d(-50%, -3.5vw, 0) scaleY(1.4);
+            transform: translate3d(-50%, -3.5vw, 0) scaleY(1.4); }
+  40% {
+    -webkit-transform: translate3d(-50%, 1.5vw, 0) scaleY(0.5);
+            transform: translate3d(-50%, 1.5vw, 0) scaleY(0.5);
+    -webkit-transform-origin: left bottom 0;
+            transform-origin: left bottom 0; }
+  50% {
+    -webkit-transform: translate3d(-50%, 1vw, 0) scaleY(1.2);
+            transform: translate3d(-50%, 1vw, 0) scaleY(1.2);
+    -webkit-transform-origin: left bottom 0;
+            transform-origin: left bottom 0; }
+  60% {
+    -webkit-transform: translate3d(-50%, 1vw, 0) scaleY(1);
+            transform: translate3d(-50%, 1vw, 0) scaleY(1);
+    -webkit-transform-origin: left bottom 0;
+            transform-origin: left bottom 0; }
+  80% {
+    opacity: 1;
+    -webkit-transform: translate3d(-50%, 1vw, 0);
+            transform: translate3d(-50%, 1vw, 0); }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-50%, 3.5vw, 0);
+            transform: translate3d(-50%, 3.5vw, 0); } }
     body.not-found #intro h2 {
       position: absolute;
       text-transform: none;
