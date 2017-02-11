@@ -24,12 +24,14 @@ $(function() {
     //progress bar
 
     function progress() {
-        var progress = ((document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100),
-            $progressBar = $('.progress .bar');
+        var $progressBar = $('.progress .bar'),
+            windowScrollTop = $(window).scrollTop(),
+            docHeight = $(document).height(),
+            windowHeight = $(window).height(),
+            scrollPercent = (windowScrollTop / (docHeight - windowHeight)) * 100;
 
-        $progressBar.width(progress + '%');
+        $progressBar.width(scrollPercent + '%');
     }
-
 
 
     $(window).scroll(function() {
