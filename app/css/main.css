@@ -321,8 +321,10 @@ body {
             height: 50px;
             width: 50px; }
             body .main .main-header .header-bar a.open-menu .hamburger span {
-              transition-duration: 0.4s;
               transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+              transition: top 0.4s, -webkit-transform 0.4s;
+              transition: transform 0.4s, top 0.4s;
+              transition: transform 0.4s, top 0.4s, -webkit-transform 0.4s;
               display: block;
               position: absolute;
               height: 2px;
@@ -338,6 +340,8 @@ body {
                 transition: opacity 0.15s ease-in; }
               body .main .main-header .header-bar a.open-menu .hamburger span:nth-child(3) {
                 top: 24px; }
+            body .main .main-header .header-bar a.open-menu .hamburger.open:hover span {
+              background-color: #515052; }
             body .main .main-header .header-bar a.open-menu .hamburger.open span {
               background-color: #fff; }
               body .main .main-header .header-bar a.open-menu .hamburger.open span:first-child {
@@ -348,8 +352,8 @@ body {
                 opacity: 0;
                 background-color: #515052; }
               body .main .main-header .header-bar a.open-menu .hamburger.open span:nth-child(3) {
-                -webkit-transform: rotate(-310deg);
-                        transform: rotate(-310deg);
+                -webkit-transform: rotate(-315deg);
+                        transform: rotate(-315deg);
                 top: 12px; }
     body .main p {
       font-size: 22px;
@@ -367,8 +371,7 @@ body {
     left: 0;
     height: 100%;
     width: 5%;
-    background: #EF4E31;
-    transition: width .1s ease-in-out; }
+    background: #EF4E31; }
 
 .cbp-so-scroller {
   margin-top: 3em; }
@@ -1058,6 +1061,8 @@ body.projects {
           right: 1em;
           height: 50px;
           width: 50px; }
+          body.projects .projects-wrap .project-overlay.open .close:hover span {
+            background-color: #9e9c9f; }
           body.projects .projects-wrap .project-overlay.open .close span {
             background-color: #515052;
             display: block;
@@ -1069,8 +1074,8 @@ body.projects {
                       transform: rotate(135deg);
               top: 12px; }
             body.projects .projects-wrap .project-overlay.open .close span:nth-child(2) {
-              -webkit-transform: rotate(-310deg);
-                      transform: rotate(-310deg);
+              -webkit-transform: rotate(-315deg);
+                      transform: rotate(-315deg);
               top: 12px; }
       body.projects .projects-wrap .project-overlay .textWrap {
         background-color: #EF4E31;

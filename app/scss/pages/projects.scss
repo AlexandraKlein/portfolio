@@ -174,6 +174,12 @@ body.projects {
           height: 50px;
           width: 50px;
 
+          &:hover {
+            span {
+              background-color: lighten($slate-gray, 30%);
+            }
+          }
+
           span {
             background-color: $slate-gray;
             display: block;
@@ -188,7 +194,7 @@ body.projects {
 
 
             &:nth-child(2) {
-              transform: rotate(-310deg);
+              transform: rotate(-315deg);
               top: 12px;
             }
           }

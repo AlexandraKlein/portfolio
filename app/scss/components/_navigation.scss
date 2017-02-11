@@ -99,8 +99,9 @@ body {
             width: 50px;
 
             span {
-              transition-duration: 0.4s;
+              //transition-duration: 0.4s;
               transition-timing-function: $transitionBounce;
+              transition: transform 0.4s, top 0.4s;
               display: block;
               position: absolute;
               height: 2px;
@@ -126,6 +127,12 @@ body {
 
             &.open {
 
+              &:hover {
+                span {
+                  background-color: $slate-gray;
+                }
+              }
+
               span {
                 background-color: $white;
 
@@ -140,7 +147,7 @@ body {
                 }
 
                 &:nth-child(3) {
-                  transform: rotate(-310deg);
+                  transform: rotate(-315deg);
                   top: 12px;
                 }
               }
@@ -170,6 +177,5 @@ body {
     height: 100%;
     width: 5%;
     background: $orange;
-    transition: width .1s ease-in-out;
   }
 }
