@@ -74,8 +74,8 @@ $( document ).ready(function() {
     //});
 
     //preloader
-    //
-    //var demoImgArray = ['images/video/video-1.jpg',
+
+    //var urlArr = ['images/video/video-1.jpg',
     //                'images/video/video-2.jpg',
     //                'images/video/video-3.jpg',
     //                'images/video/video-4.jpg',
@@ -132,6 +132,9 @@ $( document ).ready(function() {
     //                'images/video/video-55.jpg',
     //                'images/video/video-56.jpg',
     //                'images/video/video-57.jpg'];
+
+
+
 
 
 });
