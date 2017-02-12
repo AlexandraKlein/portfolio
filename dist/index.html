@@ -195,7 +195,7 @@
     <section class="cbp-so-section">
         <article class="cbp-so-side cbp-so-side-left">
             <h3>Front End Development</h3>
-            <p>HTML5, Sass Control Directives, JavaScript Task Runners and MVC Architecture. CSS3 Animation, SVG Animation, Canvas and WebGL.</p>
+            <p>Javascript, Sass Control Directives, Less, Task Runners & MVC Architecture. Experience with Angular & React. Mastery with JS, CSS & SVG Animations.</p>
         </article>
         <figure class="cbp-so-side cbp-so-side-right">
             <img src="images/homepage/poly-face.png" alt="Ali Klein">
@@ -207,13 +207,13 @@
         </figure>
         <article class="cbp-so-side cbp-so-side-right">
             <h3>Templating and CMS</h3>
-            <p>Deep understanding of templating languages such as Twig, Mustache and Handlebars. End-to-end experience with Content Management Systems such as Wordpress and the developer-friendly October.</p>
+            <p>Deep understanding of templating languages such as Twig, Nunjucks, Mustache & Handlebars. End-to-end experience with Content Management Systems such as Wordpress and the developer-friendly October.</p>
         </article>
     </section>
     <section class="cbp-so-section">
         <article class="cbp-so-side cbp-so-side-left">
             <h3>JavaScript<span> /</span> Programming</h3>
-            <p>Vanilla JavaScript, jQuery, Require.js, Backbone.js, Angular as well as task runners such as Gulp and Grunt. Looking forward to more experience with React.</p>
+            <p>Vanilla JavaScript, ES6, jQuery, Require.js, Backbone.js, Angular as well as task runners such as Webpack, Gulp & Grunt. Looking forward to more experience with React & React Native.</p>
         </article>
         <figure class="cbp-so-side cbp-so-side-right">
             <img src="images/homepage/ali-polygon-bw.png" alt="Ali Klein">
@@ -225,7 +225,7 @@
         </figure>
         <article class="cbp-so-side cbp-so-side-right">
             <h3>Design Experience</h3>
-            <p>Expert knowledge of Photoshop, Illustrator, InDesign, AfterEffects and EdgeAnimate.</p>
+            <p>Expert knowledge of Photoshop, Illustrator, InDesign, AfterEffects and EdgeAnimate. Considerable UX experience.</p>
         </article>
     </section>
 </section>
@@ -239,6 +239,49 @@
 <div class="progress">
     <div class="bar"></div>
 </div>
+
+
+
+<div id="preloader">
+    <div id="progress"></div>
+    <h2 id="progstat"></h2>
+</div>
+
+<script>
+    (function(){
+        function id(v){return document.getElementById(v); }
+        function loadbar() {
+            var ovrl = id("preloader"),
+                    prog = id("progress"),
+                    stat = id("progstat"),
+                    img = document.images,
+                    c = 0,
+                    tot = img.length;
+
+            function imgLoaded(){
+                c += 1;
+                var perc = ((100/tot*c) << 0) +"%";
+                prog.style.width = perc;
+                stat.innerHTML = perc;
+                if(c===tot) return doneLoading();
+            }
+            function doneLoading(){
+                ovrl.style.opacity = 0;
+                setTimeout(function(){
+                    ovrl.style.display = "none";
+                }, 1200);
+            }
+            for(var i=0; i<tot; i++) {
+                var tImg     = new Image();
+                tImg.onload  = imgLoaded;
+                tImg.onerror = imgLoaded;
+                tImg.src     = img[i].src;
+            }
+        }
+        document.addEventListener('DOMContentLoaded', loadbar, false);
+    }());
+</script>
+
 
 <script type="text/javascript">
     new cbpScroller( document.getElementById( 'cbp-so-scroller' ) );
