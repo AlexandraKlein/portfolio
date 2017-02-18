@@ -542,11 +542,9 @@ body.home .main {
     margin: auto; }
     body.home .main #logoAnchor .logo {
       fill: #EF4E31;
-      animation-name: fillUp;
-      animation-duration: 5s;
-      animation-timing-function: ease-in-out; }
+      animation: fillUp 5s ease-in-out forwards; }
 
-@keyframes fill {
+@keyframes fillUp {
   0% {
     fill: transparent; }
   100% {
