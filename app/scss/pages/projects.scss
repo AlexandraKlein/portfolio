@@ -26,8 +26,6 @@ body.projects {
     }
 
     .textWrap {
-      background-color: $off-black;
-      width: 57vw;
       margin-left: 2vw;
 
       @include mobile {
@@ -37,7 +35,12 @@ body.projects {
 
       h1 {
         color: $bg-color;
-        padding-top: 1vw;
+        background-color: $off-black;
+        display: table;
+        line-height: 1;
+        margin: 8px 0;
+        padding: 10px 10px 0;
+        white-space: nowrap;
 
         @include mobile {
           font-size: 3em;
@@ -203,13 +206,20 @@ body.projects {
       }
 
       .textWrap {
-        background-color: $orange;
         margin: auto;
 
         h2 {
           color: $white;
           text-align: center;
-          padding-top: 4px;
+          background-color: $orange;
+          display: table;
+          line-height: 1;
+          margin: 8px 0;
+          padding: 10px 10px 0;
+          white-space: nowrap;
+          position: relative;
+          left: 50%;
+          transform: translateX(-50%);
 
           @include tablet {
             padding-top: 0.5vw;
@@ -296,178 +306,34 @@ body.projects {
           color: $white;
         }
       }
-
-      &.deutsch {
-
-        .textWrap {
-          width: 17.5em;
-
-          @include tablet {
-            width: 36.5vw;
-          }
-        }
-      }
-
-      &.anthem {
-
-        .textWrap {
-          width: 17em;
-
-          @include tablet {
-            width: 36vw;
-          }
-        }
-      }
-
-      &.target {
-
-        .textWrap {
-
-          &:first-of-type {
-            width: 9.5em;
-
-            @include tablet {
-              width: 20vw;
-            }
-          }
-
-          &:nth-of-type(2) {
-            width: 11.5em;
-            margin-top: .25em;
-
-            @include tablet {
-              margin-top: .5vw;
-              width: 25vw;
-            }
-          }
-        }
-      }
-
-      &.vw {
-
-        .textWrap {
-          width: 10.5em;
-
-          @include tablet {
-            width: 22.5vw;
-          }
-        }
-      }
-
-      &.cmab {
-
-        .textWrap {
-          width: 12.5em;
-
-          @include tablet {
-            width: 40vw;
-          }
-        }
-      }
-
-      &.fosterfarms {
-
-        .textWrap {
-          width: 15.5em;
-
-          @include tablet {
-            width: 49vw;
-          }
-
-          h2 {
-            @include mobile {
-              @include font-size(35px);
-            }
-          }
-        }
-      }
-
-      &.tacobell {
-
-        .textWrap {
-          width: 8.5em;
-
-          @include tablet {
-            width: 18vw;
-          }
-        }
-      }
-
-      &.carnet {
-
-        .textWrap {
-          width: 15.7em;
-
-          @include tablet {
-            width: 33vw;
-          }
-        }
-      }
-
-      &.vf {
-
-        .textWrap {
-          width: 14.2em;
-
-          @include tablet {
-            width: 30vw;
-          }
-
-          h2 {
-            @include mobile {
-              font-size: 3em;
-            }
-          }
-
-          &:nth-of-type(2) {
-            margin-top: .25em;
-          }
-        }
-      }
-
-      &.vw-sharks {
-
-        .textWrap {
-          width: 14.5em;
-
-          @include tablet {
-            width: 31vw;
-          }
-        }
-      }
-
-      &.carvana {
-
-        .textWrap {
-          width: 18em;
-
-          @include tablet {
-            width: 40vw;
-          }
-        }
-      }
     }
   }
 
   .textWrap {
-    background-color: $off-black;
-    width: 86vw;
+
+    background-color: transparent !important;
 
     &.clients {
-      margin: 10vw auto 5vw;
-      padding-top: 1.5vw;
-      text-align: center;
-      line-height: 12vw;
-      width: 80vw;
+
+
+      h1 {
+        color: $bg-color;
+        background-color: $off-black;
+        display: table;
+        line-height: 1;
+        margin: 100px 0;
+        padding: 10px 10px 0;
+        white-space: nowrap;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
 
       @include mobile {
-        width: 15.5em;
+        padding: 5px 10px;
       }
     }
 
-    @include mobile {
-      width: 12.7em;
-    }
 
     h1 {
       color: $bg-color;

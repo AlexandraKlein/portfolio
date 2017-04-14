@@ -24,7 +24,7 @@
 <script src="js/lib/vivus.min.js"></script>
 <script src="js/components/navigation.js"></script>
 <script src="js/components/overlay.js"></script>
-<script src="js/components/mobileTouchHover.js"></script>
+<!--<script src="js/components/mobileTouchHover.js"></script>-->
 <script src="js/main.js"></script>
 <!-- endbuild -->
 
@@ -171,8 +171,14 @@
                 </div>
 
                 <a class="to-website" href="http://www.realcaliforniamilk.com/" target="_blank">
-                    <div class="textWrap">
+                    <div class="textWrap desktop-only">
                         <h2>Real California Milk</h2>
+                    </div>
+
+                    <div class="textWrap mobile-only">
+                        <h2>Real</h2>
+                        <h2>California</h2>
+                        <h2>Milk</h2>
                     </div>
                 </a>
 
@@ -392,14 +398,16 @@
                 </div>
 
                 <a class="to-website" href="http://takebackthetable.org/" target="_blank">
-                    <div class="textWrap">
+                    <div class="textWrap desktop-only">
                         <h2>Vanity Fair</h2>
-                    </div>
-
-                    <div class="textWrap">
                         <h2>Take Back the Table</h2>
                     </div>
 
+                    <div class="textWrap mobile-only">
+                        <h2>Vanity Fair</h2>
+                        <h2>Take Back</h2>
+                        <h2>the Table</h2>
+                    </div>
                 </a>
 
                 <ul>
@@ -505,6 +513,12 @@
 <div class="progress">
     <div class="bar"></div>
 </div>
+
+<script>
+    $(function() {
+        $('body').bind('touchstart', function() {});
+    });
+</script>
 
 </body>
 </html>
