@@ -378,4 +378,71 @@ body.projects {
     }
   }
 
+  .devices {
+    position: relative;
+    margin-top: 10%;
+
+    .desktop {
+      width: 100%;
+
+      img {
+        width: 70%;
+        display: block;
+        margin: auto;
+      }
+    }
+
+    .mobile {
+
+      img {
+        position: absolute;
+      }
+
+      img:first-child {
+        width: 60%;
+        bottom: 0;
+        left: -100%;
+      }
+
+      img:nth-child(2) {
+        width: 20%;
+        bottom: 0;
+        right: -100%;
+      }
+    }
+  }
+
+  &.open {
+    .devices .mobile {
+
+      img:first-child {
+        animation: slideInLeft .5s forwards .5s;
+      }
+
+      img:nth-child(2) {
+        animation: slideInRight .5s forwards .75s;
+      }
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      left: -100%
+    }
+
+    to {
+      left: 0;
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      right: -100%;
+    }
+
+    to {
+      right: 5%;
+    }
+  }
+
 }
