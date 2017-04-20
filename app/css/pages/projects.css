@@ -251,8 +251,8 @@ body.projects {
       body.projects .projects-wrap .project-overlay ul {
         width: 65vw;
         margin: 10vw auto;
-        height: calc(100% + 100px);
-        overflow: visible; }
+        overflow: auto;
+        padding-bottom: 80px; }
         @media (min-width: 768px) {
           body.projects .projects-wrap .project-overlay ul {
             width: 50vw;
@@ -345,3 +345,38 @@ body.projects {
       background: url("../../images/logos/sevenup-logo.svg") center center no-repeat; }
     body.projects .client-wrap .client.answerfinancial-logo {
       background: url("../../images/logos/answerfinancial-logo.svg") center center no-repeat; }
+  body.projects .devices {
+    position: relative;
+    margin-top: 10%; }
+    body.projects .devices .desktop {
+      width: 100%; }
+      body.projects .devices .desktop img {
+        width: 70%;
+        display: block;
+        margin: auto; }
+    body.projects .devices .mobile img {
+      position: absolute; }
+    body.projects .devices .mobile img:first-child {
+      width: 60%;
+      bottom: 0;
+      left: -100%; }
+    body.projects .devices .mobile img:nth-child(2) {
+      width: 20%;
+      bottom: 0;
+      right: -100%; }
+  body.projects.open .devices .mobile img:first-child {
+    animation: slideInLeft .5s forwards .5s; }
+  body.projects.open .devices .mobile img:nth-child(2) {
+    animation: slideInRight .5s forwards .75s; }
+
+@keyframes slideInLeft {
+  from {
+    left: -100%; }
+  to {
+    left: 0; } }
+
+@keyframes slideInRight {
+  from {
+    right: -100%; }
+  to {
+    right: 5%; } }
